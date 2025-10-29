@@ -7,7 +7,7 @@ has_children: true
 has_toc: true
 ---
 
-    1. Guia d’estudi
+# 1. Guia d’estudi
    
 Coneixements previs requerits
 * Ús bàsic de sistemes operatius.
