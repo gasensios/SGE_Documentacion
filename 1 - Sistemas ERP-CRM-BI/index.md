@@ -128,7 +128,7 @@ En aquest apartat, introduirem un glossari amb alguns conceptes bàsics de l'emp
   - Persona Física: és un individu humà. Aquest posseeix drets i pot contreure obligacions. En cas de deutes, una persona física ha de respondre amb el seu patrimoni. Els autònoms, encara que siguen emprenedors, es consideren persones físiques.
   - Persona Jurídica: és una entitat susceptible tant d'adquirir drets com de contraure obligacions. En cas de deutes, una persona jurídica respon amb els béns de l'entitat. Són persones jurídiques les societats, corporacions, fundacions, etc.
 
-    ![alt text](./imatges/image-2.png)
+![alt text](./imatges/image-2.png)
 
 * Clients i proveïdors:
   - Client: persona física o jurídica que adquireix un bé o servei a canvi de diners o altres béns i serveis.
@@ -140,7 +140,7 @@ En aquest apartat, introduirem un glossari amb alguns conceptes bàsics de l'emp
     - Factura completa: factura comercial que conté les dades tant de l'emissor com del receptor d’aquesta, i venen detallats els conceptes amb el seu corresponent IVA desglossat.
     - Factura simplificada (Ticket): és una factura comercial que no conté totes les dades per ser considerada factura completa.
 
-    ![alt text](./imatges/image-3.png)
+![alt text](./imatges/image-3.png)
 
 * Factura proforma: és un document que el seu encapçalat ha de contenir de forma ben visible el títol "proforma", per evitar confondre amb factures comercials. Les factures proforma serveixen com una oferta prèvia i no tenen valor comptable. Aquestes factures solen contenir identificador de proveïdor i client, descripció dels productes i serveis, així com el seu preu unitari i total.
 * Producció / fabricació, línia de producció i ordre de producció:
