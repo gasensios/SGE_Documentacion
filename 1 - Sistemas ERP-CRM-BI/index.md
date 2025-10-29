@@ -40,7 +40,7 @@ Al mercat sempre han existit programes per gestionar de forma separada o integra
 
 Una tendència actual és integrar tot aquest tipus de sistemes en sistemes ERP-CRM.
 
-![alt text](image.png)
+![alt text](./imatges/image.png)
 
 # 3. Què és un sistema ERP-CRM-BI?
            
@@ -64,7 +64,7 @@ Per això, la majoria de sistemes de gestió integrats són comunament anomenats
 
 # 4. Avantatges i inconvenients de la implantació d'un sistema ERP
 
-![alt text](image-1.png)
+![alt text](./imatges/image-1.png)
 
 La implantació d'un sistema ERP davant de la implantació de programes de gestió individuals per a cada necessitat té una sèrie d'avantatges i inconvenients.
 Els principals avantatges són:
@@ -129,7 +129,7 @@ En aquest apartat, introduirem un glossari amb alguns conceptes bàsics de l'emp
   - Persona Jurídica: és una entitat susceptible tant d'adquirir drets com de contraure obligacions. En cas de deutes, una persona jurídica respon amb els béns de l'entitat. Són persones jurídiques les societats, corporacions, fundacions, etc.
 
 {: .text-center }
-    ![alt text](image-2.png)
+    ![alt text](./imatges/image-2.png)
 
 * Clients i proveïdors:
   - Client: persona física o jurídica que adquireix un bé o servei a canvi de diners o altres béns i serveis.
@@ -141,7 +141,7 @@ En aquest apartat, introduirem un glossari amb alguns conceptes bàsics de l'emp
     - Factura completa: factura comercial que conté les dades tant de l'emissor com del receptor d’aquesta, i venen detallats els conceptes amb el seu corresponent IVA desglossat.
     - Factura simplificada (Ticket): és una factura comercial que no conté totes les dades per ser considerada factura completa.
 
-    ![alt text](image-3.png)
+    ![alt text](./imatges/image-3.png)
 
 * Factura proforma: és un document que el seu encapçalat ha de contenir de forma ben visible el títol "proforma", per evitar confondre amb factures comercials. Les factures proforma serveixen com una oferta prèvia i no tenen valor comptable. Aquestes factures solen contenir identificador de proveïdor i client, descripció dels productes i serveis, així com el seu preu unitari i total.
 * Producció / fabricació, línia de producció i ordre de producció:
