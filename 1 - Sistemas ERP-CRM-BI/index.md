@@ -7,7 +7,7 @@ has_children: true
 has_toc: true
 ---
 
-# 1. Guia d’estudi
+# **1. Guia d’estudi**
    
 ## Coneixements previs requerits
 * Ús bàsic de sistemes operatius.
@@ -33,7 +33,7 @@ Aquest document està basat en els apunts d’aquesta assignatura impartida pels
 * García Barea, Sergi.
 
 
-# 2. Introducció
+# **2. Introducció**
 Qualsevol empresa per a una òptima gestió empresarial i funcionar ha de tindre a l’esquena un sistema informàtic. Per posar en marxa aquest tipus de sistemes informàtics, a més d'una infraestructura en l’àmbit de maquinari i comunicacions, cal programari específic per a la gestió empresarial.
 
 Al mercat sempre han existit programes per gestionar de forma separada o integrada elements com ara: comptabilitat, facturació, gestió comercial, gestió de nòmines, relació amb els clients, i un llarg etc. 
@@ -42,7 +42,7 @@ Una tendència actual és integrar tot aquest tipus de sistemes en sistemes ERP-
 
 ![alt text](./imatges/image.png)
 
-# 3. Què és un sistema ERP-CRM-BI?
+# **3. Què és un sistema ERP-CRM-BI?**
            
 ## 3.1. Sistemes ERP
 Un sistema ERP ("Enterprise Resource Planning"), es tradueix literalment com "un sistema de planificació de recursos empresarials", encara que a efectes pràctics en el nostre context pot considerar com un programa de gestió empresarial integrada.
@@ -62,7 +62,7 @@ Per això, la majoria de sistemes de gestió integrats són comunament anomenats
 {: .prompt-info }
        
 
-# 4. Avantatges i inconvenients de la implantació d'un sistema ERP
+# **4. Avantatges i inconvenients de la implantació d'un sistema ERP**
 
 ![alt text](./imatges/image-1.png)
 
@@ -81,14 +81,14 @@ Els principals desavantatges són:
 * Si tens un únic sistema, un atac dut a terme amb èxit contra el sistema pot deixar exposada tota la informació utilitzada.
 * Disponibilitat de més recursos dels que l'usuari necessita, que poden portar a confusió i dificultar el seu ús. 
       
-# 5. Programar el nostre Sistema ERP o personalització de sistema ERP?
+# **5. Programar el nostre Sistema ERP o personalització de sistema ERP?**
 Quan en un entorn empresarial s'ha de prendre la decisió d'implantar un sistema ERP, aquesta no ha de ser presa a la lleugera i ha de tenir darrere una profunda anàlisi.
 
 Programar a mida el nostre sistema ERP pot tenir certs avantatges en tasques de personalització, però és una tasca que requereix un gran esforç, ja que crear un programari que siga robust i amb una àmplia funcionalitat és una tasca complexa.
 
 Per a la majoria d'organitzacions, utilitzar com a solució un sistema ERP existent i de certa entitat, aporta una certa garantia de robustesa, funcionalitat, suport, etc. Sol ser l'opció més recomanable. Aquests sistemes més solen tenir àmplies opcions de personalització tant en l’àmbit funcional (mitjançant sistemes de mòduls/plugins) com visuals (mitjançant l'ús de temes).
 
-# 6. Llicències privatives o lliures per a sistemes ERP?
+# **6. Llicències privatives o lliures per a sistemes ERP?**
 Si ens decidim per utilitzar un sistema ERP existent, un altre aspecte a considerar és la llicència de programari que utilitza el sistema ERP. Una llicència tancada ens pot crear excessiva dependència amb el desenvolupador del sistema ERP, amb els seus conseqüents problemes (canvi de tarifes, tanca empresa, traves per migració a un altre sistema ERP, etc.). 
 
 Un sistema ERP amb llicència lliure ens permet tenir una menor dependència d'una empresa concreta (diferents empreses desenvolupen per al mateix ERP, si tanca l'empresa nosaltres i una altra empresa pot seguir desenvolupant i donant suport, etc.).
@@ -98,7 +98,7 @@ Generalment, és recomanable implantar sistemes ERP amb una llicència lliure. E
 Més informació sobre els diferents tipus de llicències aquí:
 https://es.wikipedia.org/wiki/Licencia_de_software
 
-# 7. Reptes en implantar un sistema ERP
+# **7. Reptes en implantar un sistema ERP**
 Tant si s'utilitza un sistema a mida com si es realitza una personalització d'un sistema ERP, sorgeixen reptes comuns a l'hora d'implantar un sistema ERP. Alguns dels principals reptes als quals s'ha d'enfrontar la implantació d'un sistema ERP són:
 
 * Problemes tècnics: problemes en la implantació en l’àmbit de programari, maquinari, infraestructures de xarxa, etc.
@@ -108,7 +108,7 @@ Tant si s'utilitza un sistema a mida com si es realitza una personalització d'u
 * Resistència d'empleats: és molt freqüent trobar resistència d'empleats al canvi per diferents motius: prefereixen sistemes obsolets, no veuen els avantatges del canvi, no se'ls ha format (o la formació és un extra a la seua jornada laboral), por de perdre un lloc de treball, etc.
   - La solució implica establir canals d'informació i retroalimentació amb els empleats, oferir una formació completa, en horari de treball, on se celebren els èxits dels empleats en formació.
 
-# 8. Exemples de sistemes ERP 
+# **8. Exemples de sistemes ERP**
 En https://en.wikipedia.org/wiki/List_of_ERP_software_packages hi ha un llistat amb el programari ERP mes popular. En el llistat distingeixen entre programari ERP amb llicències gratuïtes o de codi obert i sistemes ERP amb llicències privatives. Alguns dels més destacats són:
 * Llicència privativa
   - JD Edwards d'Oracle
@@ -121,14 +121,13 @@ En https://en.wikipedia.org/wiki/List_of_ERP_software_packages hi ha un llistat 
 
 Al llarg d'aquest mòdul treballarem amb Odoo https://www.odoo.com. 
 
-# 9. Glossari: conceptes bàsics del món empresarial
+# **9. Glossari: conceptes bàsics del món empresarial**
 En aquest apartat, introduirem un glossari amb alguns conceptes bàsics de l'empresa. La fi d'aquest glossari és el de facilitar la comprensió d'alguns termes utilitzats en el món empresarial a l'alumnat que no estiga familiaritzat amb ells.
 * Empresa: persona, organització o institució dedicada a activitats amb ànim de lucre per a satisfer les necessitats de béns o serveis de la societat
 * Persona física i jurídica:
   - Persona Física: és un individu humà. Aquest posseeix drets i pot contreure obligacions. En cas de deutes, una persona física ha de respondre amb el seu patrimoni. Els autònoms, encara que siguen emprenedors, es consideren persones físiques.
   - Persona Jurídica: és una entitat susceptible tant d'adquirir drets com de contraure obligacions. En cas de deutes, una persona jurídica respon amb els béns de l'entitat. Són persones jurídiques les societats, corporacions, fundacions, etc.
 
-{: .text-center }
     ![alt text](./imatges/image-2.png)
 
 * Clients i proveïdors:
