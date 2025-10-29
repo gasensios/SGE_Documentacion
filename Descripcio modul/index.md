@@ -13,7 +13,7 @@ Durada total: **133 hores**.
 Component formatiu: **0491 – Sistemes de Gestió Empresarial**
 
 {: .text-center }
-![Fons Social Europeu](..//0%20Descripcio%20Mòdul/imatges/fse.png "Fons Social Europeu")
+![Fons Social Europeu](../Descripcio modul/imatges/fse.png "Fons Social Europeu")
 
 **Cofinançat pel Fons Social Europeu**
 
