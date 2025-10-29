@@ -3,7 +3,7 @@ description: Módul de 2º de cicles de grau superior DAM i DAW
 theme: just-the-docs
 
 url: https://gasensios.github.io/SGE_Documentacion/
-
+baseurl: "/SGE_Documentacion" 
 
 aux_links:
   "Accés a Aules": 
