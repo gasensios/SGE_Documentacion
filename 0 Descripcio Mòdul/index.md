@@ -3,8 +3,8 @@ title: Descripció del Mòdul
 layout: default
 parent: Sistemes de Gestió Empresarial
 nav_order: 1
-has_children: true
-has_toc: true
+has_children: false
+has_toc: false
 ---
 
 # Mòdul Sistemes de Gestió Empresarial
