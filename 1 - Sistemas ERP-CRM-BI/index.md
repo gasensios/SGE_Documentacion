@@ -1,5 +1,5 @@
 ---
-title: 1 - Sistemas ERP-CRM-BI
+title: Sistemas ERP-CRM-BI
 layout: default
 parent: Sistemes de Gestió Empresarial
 nav_order: 2
