@@ -115,8 +115,8 @@ Cada mòdul compta amb uns resultats d'aprenentatge (RA) específics, cadascun d
 
 |    | Instrument qualificació                        |  |  | Percentatge   | Requisit |
 |----|------------------------------------------------|---------------------|----------|-------------|-
-| RA | Exàmens teòric-pràctic / Projectes             |  |  | 70%           | 30%      |             |          
-| RA | Pràctiques / Treballs / Casos pràctics         |  |  | >= 5          | >= 5     |             |          
+| RA | Exàmens teòric-pràctic / Projectes             |  |  | 70%           | >= 5      |             |          
+| RA | Pràctiques / Treballs / Casos pràctics         |  |  | 30%          | >= 5     |             |          
 
 * 70% de la nota s’obté d’exàmens / projectes. La nota de cada examen/projecte ha de ser >= 5.
 * 30% de la nota s’obté de pràctiques/treballs/casos pràctics. Serà obligatòria l’entrega de
