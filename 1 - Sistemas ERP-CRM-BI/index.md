@@ -154,7 +154,7 @@ En aquest apartat, introduirem un glossari amb alguns conceptes bàsics de l'emp
     - Distribució: procés pel qual l'empresa fa arribar béns i serveis des del lloc d'emmagatzematge fins al consumidor final.
           
 
-# 10. Bibliografia
+# **10. Bibliografia**
 * Sistemes de Gestió Empresarial IOC: 
 https://ioc.xtec.cat/educacio/cfgs-dam
 
