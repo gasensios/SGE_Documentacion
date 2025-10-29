@@ -9,24 +9,24 @@ has_toc: true
 
 # 1. Guia d’estudi
    
-Coneixements previs requerits
+## Coneixements previs requerits
 * Ús bàsic de sistemes operatius.
 * Coneixements bàsics del món de l’empresa.
 
-Objectius
+## Objectius
 
 * Conéixer que és un sistema de gestió empresarial (ERP)
 * Conéixer alguns conceptes del món de l’empresa.
 
-Continguts
+## Continguts
 
 * Teoria i activitats avaluables, a compartir al fòrum els dubtes.
 
-Activitats
+## Activitats
 
 * És molt important llegir els apunts i dur a terme les tasques avaluables. 
 
-Bibliografia
+## Bibliografia
 
 Aquest document està basat en els apunts d’aquesta assignatura impartida pels professors:
 * Castillo Aliaga, José
