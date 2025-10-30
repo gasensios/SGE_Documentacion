@@ -322,6 +322,6 @@ A més, se’ns demanara configurar Odoo segons els paràmetres de la nostra ins
 
 Una vegada estiga tot llest, en polsar “Create database” s’inicialitzarà Odoo. Tingueu paciència (tarda uns minuts). Si tor ha anat bé, arribareu a una pantalla similar a la següent:
 
-![alt text](./imatges/image-2.png)
+![alt text](./imatges/)
 
 Aquesta pantalla indica que Odoo 17 s’ha instal·lat correctament i ja podem treballar amb ell.
