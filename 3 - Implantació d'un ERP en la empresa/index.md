@@ -213,7 +213,7 @@ Després dels fets de l'episodi "Strong Arms of The Ma", on intenten convéncer 
 
 Després d'aquest incident, amb la taverna cremada i sense assegurança de cobrar... Moe està trist i desanimat. Just en aquest moment recorda que va seguir una política de seguretat correcta i té còpia de seguretat emmagatzemada fora de la taverna de tot el seu sistema Odoo, per la qual cosa podrà cobrar els deutes a Barney i a la resta de parroquians i amb això començar de nou.
 
-> 💬 Interessant: encara s'escapa una mica del temari d'aquest mòdul, és interessant conéixer principis sobre com dissenyar una política de còpies de seguretat. Més informació a https://www.incibe.es/sites/default/files/contenidos/guias/guia-copias-de-seguridad.pdf
+> 💬 Interessant: encara s'escapa una mica del temari d'aquest mòdul, és interessant conéixer principis sobre com dissenyar una política de còpies de seguretat. Més informació a [https://www.incibe.es/sites/default/files/contenidos/guias/guia-copias-de-seguridad.pdf]
 
 ## 9.1  Quins elements ha de contenir una còpia de seguretat/migració d’Odoo?
 Per poder realitzar una còpia de seguretat o migració d'un sistema Odoo, s'ha de fer còpia dels següents elements:
@@ -229,18 +229,18 @@ Un cop conegut que hem de copiar, distingim el cas d'una còpia de seguretat i d
 - Còpia de seguretat: en aquest cas, simplement hauríem d’emmagatzemar aquests elements i restaurar aquells que s'hagen danyat.
 - Migració de servidor, mateixa versió d’Odoo: si realitzem una migració mantenint la versió d’Odoo, per exemple, passant el nostre sistema d'un servidor a un altre, simplement haurem de restaurar els elements anteriors i actualitzar el fitxer de configuració Odoo amb els paràmetres del nou servidor.
 - Migració entre versions d'Odoo: aquest cas és més complicat, pot ocasionar problemes i fins i tot no sempre és possible. Cal tenir clar que versions d’Odoo són les implicades i investigar sobre el procés de migració entre aquestes.
-- Entre altres coses, algunes migracions d’Odoo permeten convertir la base de dades seguint el que indica https://upgrade.odoo.com/
+- Entre altres coses, algunes migracions d’Odoo permeten convertir la base de dades seguint el que indica [https://upgrade.odoo.com/]
 
 ## 9.2  Fent còpia de la base del sistema d'Odoo
-Per aquest cas, la millor idea és fer còpia de sistema Odoo ja siga descarregant la versió actual d’Odoo en el moment de la instal·lació des de https://www.odoo.com/es_ES/page/download o si vols utilitzar l'última versió de la teua branca, pots obtenir-la des de les "Nighty builds" a https://nightly.odoo.com/.
+Per aquest cas, la millor idea és fer còpia de sistema Odoo ja siga descarregant la versió actual d’Odoo en el moment de la instal·lació des de [https://www.odoo.com/es_ES/page/download] o si vols utilitzar l'última versió de la teua branca, pots obtenir-la des de les "Nighty builds" a [https://nightly.odoo.com/].
 
-En el cas d'una instal·lació usant Docker, la millor manera de preservar el sistema base és fent una còpia de seguretat de la imatge d’Odoo utilitzada per llançar el sistema, generalment obtinguda de  https://hub.docker.com/_/Odoo.
+En el cas d'una instal·lació usant Docker, la millor manera de preservar el sistema base és fent una còpia de seguretat de la imatge d’Odoo utilitzada per llançar el sistema, generalment obtinguda de  [https://hub.docker.com/_/Odoo].
 
 ## 9.3  Fent còpia de la base de dades PostgreSQL
 Per fer una còpia de seguretat de la base de dades de PostgreSQL, tenim dues vies:
 
 **<u>Interfície d’Odoo</u>**:
-Utilitzar la interfície d’Odoo accedint a http://localhost:8069/web/database/manager (canviant "localhost:8069" per la direcció del teu host d’Odoo). En aquesta interfície, podràs tant fer còpia de seguretat de la base de dades com restaurar-la. Per a l'accés a aquesta eina, se't demanarà el "password mestre" de la instal·lació d’Odoo.
+Utilitzar la interfície d’Odoo accedint a [http://localhost:8069/web/database/manager] (canviant "localhost:8069" per la direcció del teu host d’Odoo). En aquesta interfície, podràs tant fer còpia de seguretat de la base de dades com restaurar-la. Per a l'accés a aquesta eina, se't demanarà el "password mestre" de la instal·lació d’Odoo.
 
 **<u>Còpia de seguretat tradicional</u>**:
 Fer una còpia de seguretat clàssica d'una base de dades PostgreSQL amb les eines que estimem convenients. Un exemple de passos per a aquesta còpia serien:
@@ -286,10 +286,10 @@ Un cop conegut, des de l’amfitrió podríem fer servir una ordre semblant a:
 
 # **10.  Bibliografia**
 - Sistemes de Gestió Empresarial IOC: 
-https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html
+[https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html]
 - Documentació d’Odoo:
-https://www.odoo.com/documentation/17.0/es/
+[https://www.odoo.com/documentation/17.0/es/]
 - Documentació d'usuari de Odoo:
-https://www.odoo.com/documentation/user/14.0/es/
+[https://www.odoo.com/documentation/user/14.0/es/]
 
        
