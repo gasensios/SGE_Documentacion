@@ -5,6 +5,7 @@ nav_order: 1
 has_children: true
 has_toc: true
 ---
+
 {: .text-center }
 # **<h1><u>SISTEMAS DE GESTIÓN EMPRESARIAL</u></h1>**
 
