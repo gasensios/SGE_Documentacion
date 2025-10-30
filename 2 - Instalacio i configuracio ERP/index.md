@@ -312,6 +312,8 @@ services:
 # **7. Posada en marxa d’Odoo 17**
 Una vegada realitzada la instal·lació amb qualsevol de les alternatives proposades anteriorment, accedirem mitjançant el nostre navegador a Odoo amb l’URL http://localhost:8069 i haurem de realitzar una configuració inicial. Ací un exemple d’aquesta configuració:
 
+![alt text](./imatges/image.png)
+
 A primera vista, se’ns mostrarà un “Password mestre” que podem canviar si volem. Haurem d’emmagatzemar eixe “Password” a un lloc segur per poder recuperar el nostre sistema davant problemes amb el nostre usuari.
 
 >❕ Atenció: si perdem el “Password mestre”, podem ficar-lo en blanc editant “/etc/odoo/odoo.conf” (o el fitxer “.odoorc” dins de l'“home”) i eliminat (o posar un comentari amb #) el camp “admin_password”. Si ho fem així i reiniciem el servei, Odoo ens dirà que no hi ha “Password mestre” i ens suggerirà que creem un nou password.
@@ -319,5 +321,7 @@ A primera vista, se’ns mostrarà un “Password mestre” que podem canviar si
 A més, se’ns demanara configurar Odoo segons els paràmetres de la nostra instal·lació. En aquesta configuració crearem un usuari administrador, e indicarem el nostre país (això realitzarà algunes adaptacions per a empreses locals) e idioma d’Odoo. Inclús ens permet carregar la instal·lació amb dades de demostració (útils per fer proves, conéixer com funciona Odoo, etc.).
 
 Una vegada estiga tot llest, en polsar “Create database” s’inicialitzarà Odoo. Tingueu paciència (tarda uns minuts). Si tor ha anat bé, arribareu a una pantalla similar a la següent:
+
+![alt text](./imatges/image-2.png)
 
 Aquesta pantalla indica que Odoo 17 s’ha instal·lat correctament i ja podem treballar amb ell.
