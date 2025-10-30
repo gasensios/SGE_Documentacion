@@ -32,7 +32,7 @@ En aquesta unitat mostrarem com implantar un sistema Odoo 17 en una empresa. Per
 
 >❕ Atenció:  aquesta unitat no és un exemple "pas a pas" de com realitzar totes les accions, sinó un esbós de quina configuració i mòduls poden utilitzar-se per implantar Odoo 17 Per a alguns detalls haureu de recolzar-vos en la documentació d'usuari.
 
-**<u>Documentació d'usuari d’Odoo 17</u>**:  https://www.odoo.com/documentation/17.0/
+**<u>Documentació d'usuari d’Odoo 17</u>**:  [https://www.odoo.com/documentation/17.0/]
 
 ## 2.1  Context cas pràctic: La taverna de Moe
 Moe Szyslak és un conegut taverner que regenta "La taverna de Moe". Habitualment els seus parroquians parlen d'incoherències, canten cançons, discuteixen sobre assumptes diversos, etc.
