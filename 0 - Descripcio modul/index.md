@@ -106,17 +106,17 @@ Les notes de cada avaluació (primera i segona) serà orientativa, basada en els
 per vore l’evolució de l’alumnat. En cap lloc una avaluació positiva implica la superació dels
 RAs aplicats o del mòdul en general.
 
-La formació en empresa FE en primer curs (100-150 hores), sols es podrà fer si l’alumne té avaluació positiva de tots els mòduls cursats en el primer curs.
+La formació en empresa FE en segón curs (350-400 hores), sols es podrà fer si l’alumne té avaluació positiva de tots els mòduls cursats en el segón curs.
 
 En cas de no complir algun dels criteris anteriors, i com a mesura excepcional, es podrà sol·licitar permís al tutor i al coordinador FCT-FE, que avaluaran cada cas de forma individual a fi d’autoritzar-ho o denegar-ho en funció del que considerin més profitós per l’alumne.
 
 ## PRIMERA CONVOCATÒRIA (ORDINÀRIA)
 Cada mòdul compta amb uns resultats d'aprenentatge (RA) específics, cadascun dels quals es qualificarà de la següent forma:
 
-|    | Instrument qualificació                        |  |  | Percentatge   | Requisit |
-|----|------------------------------------------------|---------------------|----------|-------------|-
-| RA | Exàmens teòric-pràctic / Projectes             |  |  | 70%           | >= 5      |             |          
-| RA | Pràctiques / Treballs / Casos pràctics         |  |  | 30%          | >= 5     |             |          
+|    | Instrument qualificació                        | Percentatge | Requisit |      
+|----|------------------------------------------------|---------------------|------------------------
+| RA | Exàmens teòric-pràctic / Projectes             | 70%  | >= 5           |                              
+| RA | Pràctiques / Treballs / Casos pràctics         | 30%  | >= 5          |                             
 
 * 70% de la nota s’obté d’exàmens / projectes. La nota de cada examen/projecte ha de ser >= 5.
 * 30% de la nota s’obté de pràctiques/treballs/casos pràctics. Serà obligatòria l’entrega de
