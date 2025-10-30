@@ -6,4 +6,8 @@ has_children: true
 has_toc: true
 ---
 {: .text-center }
-SISTEMAS DE GESTIÓN EMPRESARIAL
+# **<h1><u>SISTEMAS DE GESTIÓN EMPRESARIAL</u>**
+
+## **<u>Professor</u>**: Ginés Asensio Sanagustín
+
+## **<u>E-mail</u>**: g.asensiosanagusti@edu.gva.es

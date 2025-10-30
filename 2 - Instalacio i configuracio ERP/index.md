@@ -7,7 +7,7 @@ has_children: true
 has_toc: true
 ---
 
-# 1. Guia d’estudi
+# **1. Guia d’estudi**
 ## Coneixements previs requerits
 * Ús bàsic de sistemes operatius.
 * Coneixement de comandaments de Linux.
@@ -29,7 +29,7 @@ Aquest document està basat en els apunts d’aquesta assignatura impartida pels
     • García Barea, Sergi.
                
 
-# 2. Introducció
+# **2. Introducció**
 En aquesta unitat veurem quins factors generals hem de tenir en compte per a la instal·lació d'un sistema ERP després d'això veurem diferents formes de com instal·lar "Odoo", el programari que utilitzarem durant aquest curs.
 
 ## 2.1  Context històric dels ERP-CRM
@@ -95,7 +95,7 @@ En aquest curs utilitzarem  Odoo "Community Edition", ja que és lliure i gratu�
 Més informació a https://www.odoo.com/es_ES/ i https://github.com/odoo/odoo.
 
 
-# 3. Tipus d'instal·lació d'un sistema ERP
+# **3. Tipus d'instal·lació d'un sistema ERP**
 En aquest apartat tractarem les diferents maneres en què es pot instal·lar un sistema ERP i a  anomenar els pros i contres de cada tipus de solució. 
 
 Començarem amb les solucions no recomanades ("d’estar per casa"), per passar aquelles simples però correctes i anar evolucionant cap a les més sofisticades:
@@ -116,7 +116,7 @@ Començarem amb les solucions no recomanades ("d’estar per casa"), per passar 
      * Exemple: solucions tipus Gmail o Google Drive, on tenim tot posat en marxa i només consumim el servei. 
    * A part d'aquests tipus de "serveis en el núvol", podem tenir alguns serveis de forma individual en el núvol, com ara serveis de bases de dades (com Firebase) o serveis d'APIs REST o GRAPHQL, etc. En qualsevol cas, han de garantir una alta disponibilitat, seguretat i escalabilitat. 
 
-# 4. Llicències de programari
+# **4. Llicències de programari**
 A l'hora de triar el programari d'un sistema ERP, un dels factors és la llicència i el seu preu. Distingirem entre llicències lliures i llicències propietàries.
 Es considera llicència lliure aquella que permeta la modificació i redistribució del programari. Qualsevol llicència que no permeta la modificació i redistribució del programari es considera llicència propietària.
 
@@ -129,7 +129,7 @@ Hi ha una gran quantitat de llicències lliures. En el següent enllaç hi ha un
 Una de les primeres llicències lliures i la més garantista és GPL i les seues diferents versions. Altres de les llicències lliures més conegudes són la MIT, BSD o Apache. 
 
 
-# 5. Preparació del servei per configurar el sistema ERP
+# **5. Preparació del servei per configurar el sistema ERP**
 Cada sistema ERP és diferent i posseeix necessitats de potència diferents. Aquestes necessitats solen dependre de factors com:
 * Quantitat de dades que alberga el sistema.
 * Nombre d'usuaris simultanis.
@@ -164,7 +164,7 @@ Sistemes operatius base com Proxmox simplifiquen la gestió tant de màquines vi
 
 En cas d'optar pel núvol, si contractem un IaaS també hem de tenir en compte la potència contractada. De fet, és més important afinar correctament, ja que podem incrementar els costos sense tenir un benefici pel que fa a rendiment.
 
-# 6. Instal·lació d'un sistema ERP Odoo 17
+# **6. Instal·lació d'un sistema ERP Odoo 17**
 
 ## 6.1. Requisits d’Odoo 17
 A efectes pràctics, Odoo 17 no necessita molta potència per a funcionar. Pot funcionar sense problemes en qualsevol ordinador amb diversos nuclis i almenys 512 MB de RAM, encara que amb aquesta configuració, si rep molts accessos simultanis la màquina es pot quedar curta.
@@ -183,7 +183,7 @@ Si voleu fer una instalació manual d’Odoo 17, podeu seguir els pasos que esta
 
 >❕ Atenció: no és l'opció recomanada per a cursar aquest ,mòdul. La opció recomanada es utilitzar “Docker Compose”.
 
-# 6.3. Odoo 17 amb en Docker: - Part 1: Contenidor Odoo en producció
+## 6.3. Odoo 17 amb en Docker: - Part 1: Contenidor Odoo en producció
 > 💬 Interessant:  si coneixes com usar "Docker", pots ser-te molt útil revisar aquest curs amb exemples pràctics https://sergarb1.github.io/CursoIntroduccionADocker
  
 
@@ -309,7 +309,7 @@ services:
   	- ./volumesOdoo/dataPostgreSQL:/var/lib/postgresql/data
 
 
-# 7. Posada en marxa d’Odoo 17
+# **7. Posada en marxa d’Odoo 17**
 Una vegada realitzada la instal·lació amb qualsevol de les alternatives proposades anteriorment, accedirem mitjançant el nostre navegador a Odoo amb l’URL http://localhost:8069 i haurem de realitzar una configuració inicial. Ací un exemple d’aquesta configuració:
 
 A primera vista, se’ns mostrarà un “Password mestre” que podem canviar si volem. Haurem d’emmagatzemar eixe “Password” a un lloc segur per poder recuperar el nostre sistema davant problemes amb el nostre usuari.
