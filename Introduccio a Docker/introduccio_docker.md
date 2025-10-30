@@ -8,10 +8,10 @@ nav_order: 10
 has_toc: true
 ---
 
-## 1. INTRODUCCIÓ
+# **1. INTRODUCCIÓ**
 En aquesta unitat farem una introducció al concepte de contenidors. Ens centrarem en contenidors Linux i en concret en la tecnologia de Docker.
 
-# 2. CONCEPTES PREVIS
+# **2. CONCEPTES PREVIS**
 ## 2.1 Virtualització
 La virtualització és un conjunt de tecnologies de maquinari i programari que permeten l'abstracció de maquinari, creant així la "il·lusió" d'administrar recursos virtuals com si foren recursos reals, de manera transparent per als usuaris.
 
@@ -43,7 +43,7 @@ Alguns programaris coneguts que implementen un hipervisor són: Virtualbox, VMWa
 
 Per saber-ne més: [https://es.wikipedia.org/wiki/Hipervisor]
 
-# 3. CONTENIDORS
+# **3. CONTENIDORS**
 
 ## 3.1 Què són els contenidors?
 Els contenidors són una tecnologia de virtualització, que al contrari que un hipervisor (que tracta d'emular un sistema complet), utilitza el sistema base de la màquina amfitrió i actua realment com un "entorn privat" que comparteix recursos amb el sistema amfitrió, sense virtualitzar el maquinari complet. En concret, els contenidors solen tenir entorns privats aïllats en l’àmbit de processos, memòria, sistema de fitxers i xarxa.
@@ -113,7 +113,7 @@ prova, etc.
 - Volem fer "escalat horitzontal" de serveis, és a dir executar múltiples còpies d'una mateixa aplicació/conjunt d'aplicacions que funcionen com un clúster.
   - [https://es.wikipedia.org/wiki/Escalabilidad#Escalabilidad_horizontal]
 
-# 4. CONTENIDORS EN SISTEMES LINUX
+# **4. CONTENIDORS EN SISTEMES LINUX**
 ## 4.1 És nou el concepte d'entorns privats en sistemes Unix?
 El concepte d'entorns privats, utilitzat en els controladors, no és una cosa nova dels sistemes Unix moderns. Des de fa molts anys hi havia algunes solucions com ara:
 - chroot (Sistemes Unix): [https://es.wikipedia.org/wiki/Chroot] (1982)
@@ -154,7 +154,7 @@ Actualment, donat el creixement de Docker, hi ha altres optimitzacions que comen
 
 > 📖 Important: Aquests casos poden ser útils en algun context (proves, aprenentatge, desenvolupament per a una altra plataforma), però es perden avantatges relatives a l'rendiment.
 
-# 5. CONTENIDORS DOCKER
+# **5. CONTENIDORS DOCKER**
 ## 5.1 Què és Docker?
 Docker és un sistema de contenidors Linux que utilitza les característiques del nucli de Linux per permetre el desenvolupament i desplegament d'aplicacions.
 
@@ -211,16 +211,16 @@ Docker en sistemes Windows pot llançar contenidors que corren el sistema operat
 
 Així mateix, és possible llançar un contenidor que execute Mac OS en un sistema Linux que tinga instal·lat KVM, utilitzant el projecte disponible a [https://github.com/sickcodes/Docker-OSX]
 
-# 6. CONCLUSIÓ
+# **6. CONCLUSIÓ**
 En aquesta part de la unitat hem repassat conceptes bàsics sobre virtualització. Després d'això, hem procedit a introduir el concepte de contenidor i les seues característiques, centrant-nos en contenidors Linux. Compresos els conceptes de contenidors, hem introduït la solució Docker, la qual instal·larem i utilitzarem més endavant.
 
-# 7. BIBLIOGRAFIA
+# **7. BIBLIOGRAFIA**
 [1] WizardZines "How contenidors work" [https://wizardzines.com/zines/containers/]
 [2] Docker Docs [https://docs.docker.com/]
 [3] Linux contenidors [https://linuxcontainers.org/]
 [4] US Level virtualization [https://en.wikipedia.org/wiki/OS-level_virtualization]
 
-# 8. LLICÈNCIES D'ELEMENTS EXTERNS UTILITZATS
+# **8. LLICÈNCIES D'ELEMENTS EXTERNS UTILITZATS**
 Figura 1: Imatge amb llicència Apache 2.0. Font:
 [https://github.com/docker/docker.github.io/blob/master/engine/images/architecture.svg]
 Figura 2: Imatge amb llicència CC BY SA. Font:
