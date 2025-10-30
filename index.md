@@ -7,7 +7,7 @@ has_toc: true
 ---
 
 {: .text-center }
-# **<h1><u>SISTEMAS DE GESTIÓN EMPRESARIAL</u></h1>**
+# **<u>SISTEMAS DE GESTIÓN EMPRESARIAL</u>**
 
 ## **<u>Professor</u>**: Ginés Asensio Sanagustín
 
