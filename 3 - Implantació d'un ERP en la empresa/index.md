@@ -245,12 +245,14 @@ Utilitzar la interfície d’Odoo accedint a [http://localhost:8069/web/database
 **<u>Còpia de seguretat tradicional</u>**:
 Fer una còpia de seguretat clàssica d'una base de dades PostgreSQL amb les eines que estimem convenients. Un exemple de passos per a aquesta còpia serien:
 
-> service postgresql stop
+```
+service postgresql stop
 #per còpia
 pg_dump -U usariobd nombrebd > ficherocopia.sql 
 #per restaurar
 psql -U usariobd nombrebd < ficherocopia.sql 
 service postgresql start
+```
 
 Després d'això, tindríem la còpia de seguretat en el fitxer "ficherocopia.sql".
 

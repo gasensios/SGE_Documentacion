@@ -194,7 +194,9 @@ Per posar en marxa Odoo 17 en mode producció crearem dos contenidors:
 * El segon contenidor contindrà el servidor Odoo.
 Creem el contenidor de PostgreSQL amb:
 
-> **docker run -d -v /home/usuario/OdooDesarrollo/dataPG:/var/lib/postgresql/data -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:15**
+```
+**docker run -d -v /home/usuario/OdooDesarrollo/dataPG:/var/lib/postgresql/data -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:15**
+```
 
 On els paràmetres indiquen el següent:
 * **"-d"**: executa el contenidor en segon pla.
@@ -209,7 +211,9 @@ On els paràmetres indiquen el següent:
 
 Amb el contenidor PostgreSQL ja en marxa, vam crear el contenidor amb Odoo amb:
 
-> **docker run -d -v /home/usuario/odoo/addons:/mnt/extra-addons -p 8069:8069 --name odooprod --user root --link db:db odoo:17**
+```
+**docker run -d -v /home/usuario/odoo/addons:/mnt/extra-addons -p 8069:8069 --name odooprod --user root --link db:db odoo:17**
+```
 
 On els paràmetres indiquen el següent:
 * **"-d"**: executa el contenidor en segon pla.
@@ -222,7 +226,9 @@ On els paràmetres indiquen el següent:
 Per  llançar Odoo a un contenidor preparat per a desenvolupament, crearem també dos contenidors.
 Crearem el contenidor de PostgreSQL de forma similar a com férem en l’apartat anterior amb:
 
-> **docker run -d -v /home/usuario/OdooDesarrollo/dataPG:/var/lib/postgresql/data -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:15**
+```
+**docker run -d -v /home/usuario/OdooDesarrollo/dataPG:/var/lib/postgresql/data -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:15**
+```
 
 Un servidor de producció està pensat per a posar-ho en funcionament, realitzar poques parades i mantenir el contingut del contenidor. Habitualment es fan còpies completes del contingut per a únicament restaurar el contenidor en cas d’urgència.
 
@@ -232,7 +238,9 @@ Per a ell, modificarem la forma de crear els contenidors guardant alguna informa
 
 Crearem el contenidor d’Odoo, amb algunes diferències respecte a l’anterior:
 
-> **docker run -d -v /home/usuario/OdooDesarrollo/volumesOdoo/addons:/mnt/extra-addons -v /home/usuario/OdooDesarrollo/volumesOdoo/firestore:/var/lib/odoo/filestore -v /home/usuario/OdooDesarrollo/volumesOdoo/sessions:/var/lib/odoo/sessions -p 8069:8069 --name odoodev --user="root" --link db:db -t odoo:17 --dev=all**
+```
+**docker run -d -v /home/usuario/OdooDesarrollo/volumesOdoo/addons:/mnt/extra-addons -v /home/usuario/OdooDesarrollo/volumesOdoo/firestore:/var/lib/odoo/filestore -v /home/usuario/OdooDesarrollo/volumesOdoo/sessions:/var/lib/odoo/sessions -p 8069:8069 --name odoodev --user="root" --link db:db -t odoo:17 --dev=all**
+```
 
 A continuació, comentem les diferències:
 * **“-v /home/usuario/OdooDesarrollo/addons:/mnt/extra-addons”**: la imatge d’Odoo 17 per defecte carrega els mòduls al directori del contenidor “/mnt/extra-addons”, per això  mapejem eixe directori al nostre directori de la màquina amfitrió “/home/usuario/OdooDesarrollo/addons”, on desenvoluparem utilitzant un IDE extern.
@@ -245,9 +253,9 @@ A continuació, comentem les diferències:
 Amb això, tindrem llest el nostre entorn de desenvolupament “Dockeritzat”. Hem aconseguit que els contenidors corren de manera aïllada els serveis de base de dades i Odoo, mentre que nosaltres podrem desenvolupar utilitzant un IDE instal·lat en l’amfitrió treballant dins del directori “/home/usuario/OdooDesarrollo/addons”.
 
 ## 6.5. Odoo 17 en Docker: - Part 3: Docker Compose per a Odoo - OPCIÓ RECOMANADA
-> 💬 Interessant:  si no coneixes com utilitzar “Docker Compose”, pot ser-te molt útil revisar aquest curs amb exemples pràctics https://sergarb1.github.io/CursoIntroduccionADocker/
+> 💬 Interessant:  si no coneixes com utilitzar “Docker Compose”, pot ser-te molt útil revisar aquest curs amb exemples pràctics [https://sergarb1.github.io/CursoIntroduccionADocker/]
 
-> 💬 Interessant:  si ja coneixes com utilitzar “Docker Compose”, pots fer ús de https://raw.githubusercontent.com/sergarb1/CursoIntroduccionADocker/main/FuentesCurso/Docker%20CheatSheet%20COMPLETA.pdf 
+> 💬 Interessant:  si ja coneixes com utilitzar “Docker Compose”, pots fer ús de [https://raw.githubusercontent.com/sergarb1/CursoIntroduccionADocker/main/FuentesCurso/Docker%20CheatSheet%20COMPLETA.pdf]
 
 Docker Compose és una ferramenta que ens facilita el desplegue de diversos contenidors utilitzant una configuració definida en un fitxer. Aquest fitxer per defecte hi ha de cridar-se “docker-compose.yml”.
 
@@ -268,7 +276,8 @@ Podemos parar el servei complet simplement escrivint:
 Adjuntem a aquesta unitat un zip amb el fitxer “docker-compose.yml” per a entorn de producció i amb el fitxer “docker-compose.yml” per entorn de desenvolupament. A continuació, a més mostrem el contingut del fitxer “docker-compose.yml” per a entorn de desenvolupament.
 
 ### Fitxer “docker-compose.yml” (desenvolupament):
-> version: '3.3'
+```
+version: '3.3'
 services:
 #Definimos el servicio Web, en este caso Odoo
   web:
@@ -307,7 +316,7 @@ services:
 	# situado en el lugar donde ejecutemos "Docker compose"
 	volumes:
   	- ./volumesOdoo/dataPostgreSQL:/var/lib/postgresql/data
-
+```
 
 # **7. Posada en marxa d’Odoo 17**
 Una vegada realitzada la instal·lació amb qualsevol de les alternatives proposades anteriorment, accedirem mitjançant el nostre navegador a Odoo amb l’URL http://localhost:8069 i haurem de realitzar una configuració inicial. Ací un exemple d’aquesta configuració:
@@ -322,6 +331,6 @@ A més, se’ns demanara configurar Odoo segons els paràmetres de la nostra ins
 
 Una vegada estiga tot llest, en polsar “Create database” s’inicialitzarà Odoo. Tingueu paciència (tarda uns minuts). Si tor ha anat bé, arribareu a una pantalla similar a la següent:
 
-![alt text](./imatges/)
+![alt text](./imatges/image-2.png)
 
 Aquesta pantalla indica que Odoo 17 s’ha instal·lat correctament i ja podem treballar amb ell.
