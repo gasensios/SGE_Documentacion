@@ -4,7 +4,7 @@ parent: Introduccio a Docker
 grand_parent: Sistemes de Gestió Empresarial
 has_children: true
 layout: default
-nav_order: 30
+nav_order: 40
 has_toc: true
 ---
 
