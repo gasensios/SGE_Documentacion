@@ -306,16 +306,17 @@ Comandament que simplement crea les imatges definides en la plantilla "docker-co
 Comandament descàrrega les imatges de contenidors necessàries per "docker-compose.yml". El seu funcionament es detalla en [https://docs.docker.com/compose/reference/pull/](https://docs.docker.com/compose/reference/pull/)
 
 ## 4.5 Comandament "run"
-Comandament que permet llançar una ordre contra un servei concret definit a la plantilla **"docker-compose.yml"**. El detall del seu funcionament està disponible en [https://docs.docker.com/compose/reference/run/]
+Comandament que permet llançar una ordre contra un servei concret definit a la plantilla **"docker-compose.yml"**. El detall del seu funcionament està disponible en [https://docs.docker.com/compose/reference/run/](https://docs.docker.com/compose/reference/run/)
 
 ## 4.6 Comandament "pause"/"unpause"
-Amb e comandament" pause"/"unpause" és pausan/reprenen els contenidors de la plantilla. El detall del seu funcionament i paràmetres està definit en la següent adreça [https://docs.docker.com/compose/reference/pause/]
+Amb e comandament" pause"/"unpause" és pausan/reprenen els contenidors de la plantilla. El detall del seu funcionament i paràmetres està definit en la següent adreça [https://docs.docker.com/compose/reference/pause/](https://docs.docker.com/compose/reference/pause/)
 
 ## 4.7 Comandament "start"/"stop"
 Amb el comandament "start"/"stop" podem iniciar/parar sense paràmetres tots els serveis de la plantilla o amb paràmetres, el servei que desitgem d'aquesta plantilla. També inicia per les seues dependències, si les té.
 El detall del seu funcionament i paràmetres està definit en:
-- https://docs.docker.com/compose/reference/stop/
-- https://docs.docker.com/compose/reference/start/
+- [https://docs.docker.com/compose/reference/stop/](https://docs.docker.com/compose/reference/stop/)
+- [https://docs.docker.com/compose/reference/start/](https://docs.docker.com/compose/reference/start/)
+
 Exemple:
 ```
 docker-compose start db
@@ -327,17 +328,17 @@ docker-compose stop db
 Atura el servei "db" de la plantilla.
 
 ## 4.8 Comandament "ps"
-Similar al comandament "docker ps", només que aplicat als contenidors de la plantilla. El detall del seu funcionament i paràmetres està definit en la següent adreça [https://docs.docker.com/compose/reference/ps/]
+Similar al comandament "docker ps", només que aplicat als contenidors de la plantilla. El detall del seu funcionament i paràmetres està definit en la següent adreça [https://docs.docker.com/compose/reference/ps/](https://docs.docker.com/compose/reference/ps/)
 
 ## 4.9 Comandament "exec"
-El comandament "exec" és similar a"docker exec". Ens permet executar una ordre els contenidors amb una plantilla determinada. El detall del seu funcionament està definit en [https://docs.docker.com/compose/reference/exec/]
+El comandament "exec" és similar a"docker exec". Ens permet executar una ordre els contenidors amb una plantilla determinada. El detall del seu funcionament està definit en [https://docs.docker.com/compose/reference/exec/](https://docs.docker.com/compose/reference/exec/)
 Exemple:
 ```
 docker-compose exec db mysql --version
 ```
 
 ## 4.10 Comandament "rm"
-El comandament "rm" elimina tots els contenidors aturats segons la plantilla determinada en **"docker-compose.yml"**. El detall del seu funcionament està definit en https://docs.docker.com/compose/reference/rm/
+El comandament "rm" elimina tots els contenidors aturats segons la plantilla determinada en **"docker-compose.yml"**. El detall del seu funcionament està definit en [https://docs.docker.com/compose/reference/rm/](https://docs.docker.com/compose/reference/rm/)
 
 # 5. BIBLIOGRAFIA
 [1] Docker Docs [https://docs.docker.com/]
