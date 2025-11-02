@@ -1,10 +1,10 @@
 ---
-title:  Part_2:instal·lació de docker
+title:  Part_3:accions de docker
 parent: Introduccio a Docker
 grand_parent: Sistemes de Gestió Empresarial
 has_children: true
 layout: default
-nav_order: 20
+nav_order: 30
 has_toc: true
 ---
 
