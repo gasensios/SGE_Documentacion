@@ -1,5 +1,5 @@
 ---
-title:  Part_3:accions de docker
+title:  Part_2:instal·lació_docker
 parent: Introduccio a Docker
 grand_parent: Sistemes de Gestió Empresarial
 has_children: true
