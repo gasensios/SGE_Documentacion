@@ -262,6 +262,7 @@ docker-compose down
 En aquest apartat definirem els principals comandaments de "Docker Compose".
 ## 4.1 Comandament "up"
 Amb la comanda "up" s'interpretarà la plantilla "docker-compose.yml" i es llançaran els contenidors necessaris. El detall del seu funcionament i paràmetres està definit en la següent adreça https://docs.docker.com/compose/reference/up/
+
 **<u>Alguns dels usos més típics són</u>**:
 ```
 docker-compose up -d
