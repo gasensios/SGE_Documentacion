@@ -283,7 +283,7 @@ El paràmetre "--scale" indica que del servei "db" es creuen tres contenidors, r
 
 ## 4.2 Comandament "down"
 Amb la comanda **"down"** s'interpretarà la plantilla i es paren els contenidors necessaris.
-El detall del seu funcionament i paràmetres està definit en la següent adreça [https://docs.docker.com/compose/reference/down/]
+El detall del seu funcionament i paràmetres està definit en la següent adreça [https://docs.docker.com/compose/reference/down/](https://docs.docker.com/compose/reference/down/)
 
 **<u>Alguns dels usos més típics són</u>**:
 ```
@@ -300,7 +300,7 @@ docker-compose down -t 5
 Estableix un "timeout" per a la parada de contenidors de 5 segons. El valor per defecte si no s'indica res és de 10 segons.
 
 ## 4.3 Comandament "build"
-Comandament que simplement crea les imatges definides en la plantilla "docker-compose.yml". El seu funcionament es detalla en https://docs.docker.com/compose/reference/build/
+Comandament que simplement crea les imatges definides en la plantilla "docker-compose.yml". El seu funcionament es detalla en [https://docs.docker.com/compose/reference/build/](https://docs.docker.com/compose/reference/build/)
 
 ## 4.4 Comandament "pull"
 Comandament descàrrega les imatges de contenidors necessàries per "docker-compose.yml". El seu funcionament es detalla en [https://docs.docker.com/compose/reference/pull/](https://docs.docker.com/compose/reference/pull/)
