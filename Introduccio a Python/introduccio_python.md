@@ -10,6 +10,7 @@ has_toc: true
 
 # Introducció a python
 En aquest document, realitzarem un resum dels principals elements del llenguatge Python, basant-nos en la documentació de [https://learnxinyminutes.com/docs/es-es/python-es/](https://learnxinyminutes.com/docs/es-es/python-es/), comentant cada element i en alguns casos afegint exemples addicionals.
+
 **<u>Unitat MOLT IMPORTANT. S’ha de treballar en ella durant tota l’avaluació.</u>**
 
 ## 1. CONEIXEMENTS PREVIS REQUERITS
