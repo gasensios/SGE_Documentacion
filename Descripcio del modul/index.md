@@ -1,5 +1,5 @@
 ---
-title: 0 - Descripcio modul
+title: Descripcio del modul
 layout: default
 parent: Sistemes de Gestió Empresarial
 nav_order: 1

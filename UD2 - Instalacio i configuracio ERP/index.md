@@ -1,8 +1,8 @@
 ---
-title: 2 - Instalacio i configuracio ERP
+title: UD2 - Instalacio i configuracio ERP
 layout: default
 parent: Sistemes de Gestió Empresarial
-nav_order: 3
+nav_order: 4
 has_children: true
 has_toc: true
 ---
