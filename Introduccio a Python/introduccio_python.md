@@ -47,7 +47,7 @@ Corba d’aprenentatge suau: per començar a programar des de zero, Python és d
 ## 7. ELEMENTS DEL LLENGUATGE PYTHON 3
 ### 7.1 Comentari
 Els comentaris es realitzen amb el caràcter “#” per a una línia i “tres cometes” per a multilínia. A més, les 3 cometes poden utilitzar-se per a definir cadenes multilínia.
-```python:
+```python
 # Comentarios de una línea comienzan con una almohadilla (o signo gato)
 """ Strings multilinea pueden escribirse
 usando tres "'s, y comunmente son usados
@@ -63,7 +63,7 @@ como comentarios.
 ```
 La nomenclatura para aquesta secció és “operació # => resultat esperat”, on la part a la dreta del caràcter “#” és un comentari i només ens dona informació de com funcionarà l’operació. 
 Si en Python 3 poses un número, obtens simplement eixe número.
-```python:
+```python
 # Tienes números
 3 # => 3
 Si realitzes operacions aritmètiques amb enters, obtens el resultat amb un nombre enter. Els
@@ -77,7 +77,7 @@ parèntesis modifiquen la precedència entre operadors.
 ```
 
 La divisió, encara que entre enters, retorna un tipus de dada “float” (decimal) si es fa amb “/”, però si es desitja un resultat sencer (amb truncat de decimals) pots utilitzar “//”.
-```python:
+```python
 # Excepto la división la cual por defecto retorna un número 'float' (número de coma flotante)
 35 / 5 # => 7.0
 # Sin embargo también tienes disponible división entera
@@ -85,7 +85,7 @@ La divisió, encara que entre enters, retorna un tipus de dada “float” (deci
 ```
 
 Si en una operació aritmètica, algun dels dos operadors és un “float”, el resultat sempre és un float (es converteix a la mena de dades que major engloba).
-```python:
+```python
 # Cuando usas un float, los resultados son floats
 3 * 2.0 # => 6.0
 Ací veiem el tipus de dades “boolean” i els operadors lògics que ens retornen un “boolean”.
@@ -112,7 +112,7 @@ not False # => True
 ```
 
 Ací observem com definir “Strings” (cadenes de caràcters) i com operar amb ells (format, concatenació, accés a un element, etc.)
-```python:
+```python
 # Strings se crean con " o '
 "Esto es un string."
 'Esto también es un string'
@@ -134,7 +134,7 @@ comida = 'Lasaña'
 f'{nombre} quiere comer {comida}' # => "Bob quiere comer lasaña"
 ```
 None és un objecte predefinit en Python, utilitzat per a comparar si alguna cosa és “res”.
-```python:
+```python
 # None es un objeto
 None # => None
 # No uses el símbolo de igualdad `==` para comparar objetos con None
@@ -151,7 +151,7 @@ bool(set()) # => False
 ```
 
 ### 7.3 Variables i coleccions
-```python:
+```python
 ####################################################
 ## 2. Variables y Colecciones
 ####################################################
@@ -160,7 +160,7 @@ La funció “print” ens permet imprimir cadenes de caràcters.
 print("Soy Python. Encantado de conocerte")
 ```
 En Python no és necessari declarar variables abans d'utilitzar-les. Una convenció és usar “_” per a separar les paraules, però hi ha altres com Camel Case [https://es.wikipedia.org/wiki/camel_case](https://es.wikipedia.org/wiki/camel_case)
-```python:
+```python
 # No hay necesidad de declarar las variables antes de asignarlas.
 una_variable = 5
  # La convención es usar guiones_bajos_con_minúsculas
@@ -174,7 +174,7 @@ otra_variable # Levanta un error de nombre
 ```
 
 La principal col·lecció d'elements en Python són les llistes. Ací veiem exemples d'ús:
-```python:
+```python
 # Listas almacena secuencias
 lista = []
 # Puedes empezar con una lista prellenada
@@ -192,7 +192,7 @@ lista.append(3)# Nuevamente lista ahora es [1, 2, 4, 3].
 ```
 
 Per a accedir a elements d'una llista, accedim com accedirem en altres llenguatges a un array: si té N elements, amb valors del 0 al N-1. A més Python permet referència negatives. Per exemple, -1 en  una llista de N elements, equival a accedir a l'element “N-1”.
-```python:
+```python
 # Accede a una lista como lo harías con cualquier arreglo
 lista[0] # => 1
 # Mira el último elemento
@@ -203,7 +203,7 @@ lista[4] # Levanta la excepción IndexError
 
 Les llistes permeten obtenir una nova llista formada per un rang d'elements usant “:”. La part esquerra al “:” és on comença, i la part dreta on acaba. Si es fica un segon “:”, indica el nombre de passos del rang a prendre. Al final segueix una sintaxi “llista[inici:final:passos]”.
 A continuació, alguns exemples de rangs i altres operacions (concatenació, comprovar elements, grandària, esborrat, etc.) amb llistes:
-```python:
+```python
 # Puedes mirar por rango con la sintáxis de trozo.
 # (Es un rango cerrado/abierto para los matemáticos.)
 lista[1:3] # => [2, 4]
@@ -231,7 +231,7 @@ len(lista) # => 6
 
 Un altre element (menys utilitzat en Python que les llistes) són les tuplas. Les tuplas són com les llistes, només que són immutables (no podem canviar valors, 
 afegir, esborrar, etc.).
-```python:
+```python
 # Tuplas son como listas pero son inmutables.
 tupla = (1, 2, 3)
 tupla[0] # => 1
@@ -252,7 +252,7 @@ e, d = d, e
 ```
 
 Una altra estructura de dades interessant i òptima és la implementació de diccionaris (és a dir, associació clau/valor) en Python mitjançant l'estructura “{ }”. A continuació veiem alguns exemples.
-```python:
+```python
 # Diccionarios relacionan claves y valores
 dicc_vacio = {}
 # Aquí está un diccionario pre-rellenado
@@ -293,7 +293,7 @@ del dicc_lleno['uno'] # Remueve la llave 'uno' de dicc_lleno
 
 Una altra estructura de dades òptima per a aquest procés són els conjunts. Permet fer de manera
 òptima operacions relacionades amb els conjunts (intersecció, unió, etc.).
-```python:
+```python
 # Sets (conjuntos) almacenan conjuntos
 conjunto_vacio = set()
 
@@ -324,7 +324,7 @@ conjunto_lleno | otro_conjunto # => {1, 2, 3, 4, 5, 6}
 ```
 
 Ací veiem exemples de com utilitzar l'estructura de control de flux “if”:
-```python:
+```python
 # Creemos una variable para experimentar
 some_var = 5
 # Aquí está una declaración de un 'if'. ¡La indentación es significativa en Python!
@@ -340,7 +340,7 @@ print("una_variable es de hecho 10.")
 ```
 
 Ací veiem com utilitzar l'estructura “for” per a iterar sobre cada element dels elements que Python considera “iterables” (llestes, tuples, diccionaris, etc.).
-```python:
+```python
 """
 For itera sobre iterables (listas, cadenas, diccionarios, tuplas, generadores...)
 imprime:
@@ -354,7 +354,7 @@ print("{} es un mamifero".format(animal))
 ```
 
 La funció “range” és un generador de números. Ens pot ajudar per a realitzar iteracions numèriques utilitzant for:
-```python:
+```python
 """
 `range(número)` retorna un generador de números
 desde cero hasta el número dado
@@ -370,7 +370,7 @@ print(i)
 ```
 
 L'estructura de control de flux “While”, itera mentre una condició siga certa.
-```python:
+```python
 """
 While itera hasta que una condición no se cumple.
 imprime:
@@ -386,7 +386,7 @@ x += 1 # versión corta de x = x + 1
 ```
 
 Python 3 permet el maneig d'excepcions mitjançant “try” i “catch” com s'observa ací:
-```python:
+```python
 # Maneja excepciones con un bloque try/except
 try:
 
@@ -397,7 +397,7 @@ pass # Pass no hace nada (“pasa”). Usualmente aquí harias alguna recuperaci
 ```
 
 Ací veiem un exemple de com crear elements iterables i algunes propietats. En l'exemple, treballarem utilitzant les “claus” (keys) d'un diccionari i poder recórrer-los amb un for.
-```python:
+```python
 # Python ofrece una abstracción fundamental llamada Iterable.
 # Un iterable es un objeto que puede ser tratado como una sequencia.
 # El objeto es retornado por la función 'range' es un iterable.
@@ -409,7 +409,7 @@ nuestra interfaz Iterable
 ```
 
 Podemos recorrerla.
-```
+```python
 for i in nuestro_iterable:
 print(i) # Imprime uno, dos, tres
 
@@ -439,7 +439,7 @@ list(dicc_lleno.keys()) # => Retorna ["uno", "dos", "tres"]
 ####################################################
 ```
 Ací alguns exemples de definició i crida de funcions en Python 3.
-```python:
+```python
 # Usa 'def' para crear nuevas funciones
 def add(x, y):
 print("x es {} y y es {}".format(x, y))
@@ -483,7 +483,7 @@ todos_los_argumentos(*args, **kwargs) # es equivalente a foo(1, 2, 3, 4, a=3, b=
 ```
 
 Per a facilitar algunes operacions, Python permet tant funcions definides (de primera classe) com a funcions anònimes. Aquestes funcions anònimes ens ajuden sobretot a utilitzar “programació funcional” amb funcions com “map”, “filter” i “reduce”.
-```python:
+```python
 # Python tiene funciones de primera clase
 def crear_suma(x):
 def suma(y):
@@ -517,7 +517,7 @@ filter(lambda x: x > 5, [3, 4, 5, 6, 7]) # => [6, 7]
 ####################################################
 ```
 Les classes en Python, hereten inicialment de l'objecte predefinit “object”. Ací un exemple de definició de classe amb atributs, constructor i mètodes.
-```python:
+```python
 # Heredamos de object para obtener una clase.
 class Humano(object):
 
@@ -572,7 +572,7 @@ Humano.roncar() # => "*roncar*"
 ####################################################
 ```
 Python permet importar mòduls, tant creats per nosaltres, com a existents en el sistema. Una potent eina per a descarregar mòduls més populars és “pip” [https://pypi.org/project/pip/](https://pypi.org/project/pip/)
-```python:
+```python
 # Puedes importar módulos
 import math
 print(math.sqrt(16)) # => 4.0
@@ -598,7 +598,7 @@ dir(math)
 
 ### 7.8 Avanzat: generadors i decoradors
 Exemple de creació de generadors:
-```python:
+```python
 # Los generadores te ayudan a hacer un código perezoso (lazy)
 def duplicar_numeros(iterable):
 for i in iterable:
