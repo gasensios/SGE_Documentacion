@@ -16,11 +16,11 @@ Docker) en sistemes Linux, ja que la seua implementació avui dia és més robus
 En aquest apartat parlarem de la instal·lació de Docker engine CE (Community Edition) en sistemes Linux en distribucions basades en Ubuntu (Ubuntu, Kubuntu, Linux Mint, etc.).
 El procediment per instal·lar Docker engine CE en altres distribucions és similar i aquí deixe alguns enllaços amb instruccions per instal·lar-ho en algunes de les més populars:
 
-- CentOS: https://docs.docker.com/engine/install/centos/
-- Debian: https://docs.docker.com/engine/install/debian/
-- Fedora: https://docs.docker.com/engine/install/fedora/
+- CentOS: [https://docs.docker.com/engine/install/centos/](https://docs.docker.com/engine/install/centos/)
+- Debian: [https://docs.docker.com/engine/install/debian/](https://docs.docker.com/engine/install/debian/)
+- Fedora: [https://docs.docker.com/engine/install/fedora/](https://docs.docker.com/engine/install/fedora/)
 
-Així mateix, també és possible la realització d'una instal·lació des dels binaris, seguint les instruccions de https://docs.docker.com/engine/install/binaries/
+Així mateix, també és possible la realització d'una instal·lació des dels binaris, seguint les instruccions de [https://docs.docker.com/engine/install/binaries/]/(https://docs.docker.com/engine/install/binaries/)
 
 ## 2.1 Instal·lació des del repositori oficial d'Ubuntu (no recomanat)
 És possible instal·lar Docker Engine des del repositori oficial d'Ubuntu, però no està recomanat, ja que instal·la versions antigues. En aquesta unitat, donarem per descomptat que no utilitzaren aquestes versions.
@@ -97,11 +97,11 @@ Finalment, comprovarem que Docker Engine CE s'ha instal·lat correctament execut
 > sudo docker version i obtenint un resultat similar al següent:
 
 Per a més informació sobre aquesta comanda podeu visitar
-https://docs.docker.com/engine/reference/commandline/version/
+[https://docs.docker.com/engine/reference/commandline/version/](https://docs.docker.com/engine/reference/commandline/version/)
 
 ## 2.3 Post instal·lació
 En la documentació de Docker, ens proposen alguns passos de post instal·lació. Els podeu consultar
-al https://docs.docker.com/engine/install/linux-postinstall/
+al [https://docs.docker.com/engine/install/linux-postinstall/](https://docs.docker.com/engine/install/linux-postinstall/)
 
 En aquesta secció comentarem dos d'ells: administrar Docker amb usuaris sense privilegis (no root ni sudoers) i arrencar Docker des de l'inici.
 
@@ -174,9 +174,9 @@ La segona opció, s'ha de realitzar després d'eliminar Docker i consisteix en l
 En aquest apartat veurem com instal·lar Docker Desktop en sistemes Windows.
 Docker posseeix dues guies diferenciades d'instal·lació en sistemes Windows:
 - Guia per a Windows 10 Pro i Windows Server
-  - https://docs.docker.com/docker-for-windows/install/
+  - [https://docs.docker.com/docker-for-windows/install/](https://docs.docker.com/docker-for-windows/install/)
 - Guia per Windows 10 Home
-  - https://docs.docker. com/docker-for-windows/install-windows-home/
+  - [https://docs.docker.com/docker-for-windows/install-windows-home/](https://docs.docker.com/docker-for-windows/install-windows-home/)
 
 La principal diferència entre elles, és que el primer grup requereix que s'activen les característiques de Windows per Hyper-V, mentre que la segona guia requereix l'activació de WSL2 (Windows
 Subsystem for Linux 2).
@@ -184,13 +184,13 @@ Subsystem for Linux 2).
 ## 3.1 Passos previs Windows 10 Pro i Windows Server: activant Hyper-v
 En aquest enllaç s'explica com habilitar Hyper-V a:
 - Windows 10 Pro
-  - https://docs.microsoft.com/es-es/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v
+  - [https://docs.microsoft.com/es-es/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v](https://docs.microsoft.com/es-es/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 - Windows Server
-- https://docs.microsoft.com/es-es/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role -on-windows-server
+  - [https://docs.microsoft.com/es-es/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server](https://docs.microsoft.com/es-es/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 
 ## 3.2 Passos previs Windows 10 Home: Instal·lant WSL2
 Abans de començar, el nostre sistema ha de tenir instal·lat WSL2. La guia per instal·lar-es troba
-aquí [https://docs.microsoft.com/en-us/windows/wsl/install-win10]
+aquí [https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 A continuació un resum dels passos a realitzar.
 En primer lloc, utilitzant una consola PowerShell amb permisos d'administrador,hem d'habilitar WSL. Ho podem fer amb el comandament.
@@ -211,7 +211,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform
 
 Després d'això , hauràs de reiniciar la teua màquina abans del proper pas.
 Un cop completat el reinici, hauràs instal·lat l'última versió del nucli de Linux per WSL2 aquí
-[https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi]
+[https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 Finalitzada la instal·lació, amb una PowerShell amb permisos d'administrador, hauràs de establir
 WSL2 com la versió per defecte en instal·lar una distribució de Linux.
 
@@ -221,10 +221,10 @@ Amb això ja tens llest WSL2 i una versió d'Ubuntu instal·lada en el teu siste
 **OPCIONAL**: una vegada instal·lat WSL2, pots instal·lar distribucions de Linux mitjançant la botiga Microsoft Store https://aka.ms/wslstore (per exemple Ubuntu 20). Una vegada instal·lada, és obligatori que siga iniciada almenys una vegada perquè descomprimiu part de sistema i després et demane establir un usuari administrador de la distribució Linux virtualitzada.
 
 ## 3.3 Instal·lació de Docker Desktop
-La instal·lació de Docker Desktop, que és la versió de Docker CE per a sistemes Windows, és senzilla. Bàsicament consisteix a descarregar l'instal·lador des de Docker Hub, en el següent enllaç https://hub.docker.com/editions/community/docker-ce-desktop-windows/ i seguir les instruccions d'instal·lació en pantalla.
+La instal·lació de Docker Desktop, que és la versió de Docker CE per a sistemes Windows, és senzilla. Bàsicament consisteix a descarregar l'instal·lador des de Docker Hub, en el següent enllaç [https://hub.docker.com/editions/community/docker-ce-desktop-windows/](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) i seguir les instruccions d'instal·lació en pantalla.
 
 En aquest enllaç es pot veure un vídeo en el qual es realitza la instal·lació
-[https://www.youtube.com/watch?v=9AWYlt86B8]
+[https://www.youtube.com/watch?v=9AWYlt86B8](https://www.youtube.com/watch?v=9AWYlt86B8)
 Finalment, amb Docker Desktop instal·lat i llançat, comprovarem que Docker Engine CE s'ha instal·lat correctament executant:
 
 > docker version
@@ -233,13 +233,13 @@ obtenint un resultat similar al següent:
 ![alt text](./imatges/image-4.png)
 
 Per a més informació sobre aquesta comanda podeu visitar
-[https://docs.docker.com/engine/reference/commandline/version/]
+[https://docs.docker.com/engine/reference/commandline/version/](https://docs.docker.com/engine/reference/commandline/version/)
 
 ## 3.4 Resolent problemes en la instal·lació de Docker Desktop
 En la meua experiència amb Docker Desktop, he tingut problemes, fins i tot simplement instal·lant
 actualitzacions. Hi ha quantitat de bugs típics com els que us enllace ací:
-- https://forums.docker.com/t/docker-starts-but-trying-to
-- https://github.com/docker/for-win/issues/7629-do-anything-results-in-error-during-connect/49007/4
+- [https://forums.docker.com/t/docker-starts-but-trying-to](https://forums.docker.com/t/docker-starts-but-trying-to)
+- [https://github.com/docker/for-win/issues/7629-do-anything-results-in-error-during-connect/49007/4](https://github.com/docker/for-win/issues/7629-do-anything-results-in-error-during-connect/49007/4)
 
 **<u>Aquest és el motiu que, si us és possible, us recomane utilitzar Docker en un sistema Linux, on la seua implementació és més robusta.</u>**
 
@@ -250,20 +250,20 @@ següents:
 - Ves al teu directori d'usuari (alguna cosa com C:\Users\tuUsuario) i elimina tot el contingut de la carpeta ".docker", si és que hi és.
 - Elimina totes les "variables d'entorn" del sistema relacionades amb Docker. Solen començar amb "DOCKER_". Algunes d'elles poden ser DOCKER_TLS_VERIFY, DOCKER_CERT_PATH o
 DOCKER_HOST.
-  - Aquí pots veure com eliminar les variables d'entorn de Windows 10: https://answers.microsoft.com/es-es/windows/forum/windows_10-other_settings/windows-10-variables-de-entorno-windows-10-version/703ea5fa-1db4-46da-8ff7-6261140bf58b
+  - Aquí pots veure com eliminar les variables d'entorn de Windows 10: [https://answers.microsoft.com/es-es/windows/forum/windows_10-other_settings/windows-10-variables-de-entorno-windows-10-version/703ea5fa-1db4-46da-8ff7-6261140bf58b](https://answers.microsoft.com/es-es/windows/forum/windows_10-other_settings/windows-10-variables-de-entorno-windows-10-version/703ea5fa-1db4-46da-8ff7-6261140bf58b)
 - En aquest punt, reinicia el sistema.
 - Una vegada reiniciat, instal·la de nou "Docker Desktop".
 
 # 4. INSTAL·LACIÓ DE DOCKER EN SISTEMES MACOS
-Les instruccions per a la instal·lació de Docker Desktop en MacOS estan descrites en [https://docs.docker.com/docker-for-mac/install/].
-Per realitzar aquesta instal·lació, bàsicament ha de descarregar-se el paquet ".dmg" de [https://hub.docker.com/editions/community/docker-ce-desktop-mac/] i seguir les instruccions d'instal·lació en pantalla.
+Les instruccions per a la instal·lació de Docker Desktop en MacOS estan descrites en [https://docs.docker.com/docker-for-mac/install/](https://docs.docker.com/docker-for-mac/install/).
+Per realitzar aquesta instal·lació, bàsicament ha de descarregar-se el paquet ".dmg" de [https://hub.docker.com/editions/community/docker-ce-desktop-mac/](https://hub.docker.com/editions/community/docker-ce-desktop-mac/) i seguir les instruccions d'instal·lació en pantalla.
 
 # 5. PLAYGROUNDS DE DOCKER
 A Internet hi ha diversos llocs que ens permeten utilitzar un "playground" de diferents eines,
 perquè juguem amb elles línia, sense necessitat d'instal·lar ni configurar res (i sense el risc de
 trencar coses).
-El lloc web Katacoda [https://katacoda.com/] posseeix un "playground" de Docker disponible aquí:
-[https://www.katacoda.com/courses/docker/playground]
+El lloc web Katacoda [https://katacoda.com/](https://katacoda.com/) posseeix un "playground" de Docker disponible aquí:
+[https://www.katacoda.com/courses/docker/playground](https://www.katacoda.com/courses/docker/playground)
 
 Us anime a utilitzar-lo si voleu fer alguna prova, trastejar en un lloc on no teniu Docker instal·lat o per ensenyar Docker en contextos on no es puga instal·lar de forma nativa.
 
@@ -272,4 +272,4 @@ En aquesta unitat hem vist els passos bàsics per instal·lar Docker en diferent
 No obstant això, continuem amb la nostra recomanació que si és possible, per minimitzar problemes utilitzem Docker en sistemes Linux.
 
 # 7. BIBLIOGRAFIA
-[1] Docker Docs: [https://docs.docker.com/]
+[1] Docker Docs: [https://docs.docker.com/](https://docs.docker.com/)

@@ -121,14 +121,17 @@ Ací observem com definir “Strings” (cadenes de caràcters) i com operar amb
 "Hola " + "mundo!" # => "Hola mundo!"
 # Un string puede ser tratado como una lista de caracteres
 "Esto es un string"[0] 'E'
+
 # .format puede ser usaro para darle formato a los strings, así:
 "{} pueden ser {}".format("strings", "interpolados")
 # Puedes reutilizar los argumentos de formato si estos se repiten.
 "{0} sé ligero, {0} sé rápido, {0} brinca sobre la {1}".format("Jack", "vela") # => "Jack sé ligero,
 Jack sé rápido, Jack brinca sobre la vela"
+
 # Puedes usar palabras claves si no quieres contar.
 "{nombre} quiere comer {comida}".format(nombre="Bob", comida="lasaña") # => "Bob quiere
 comer lasaña"
+
 # También puedes interpolar cadenas usando variables en el contexto
 nombre = 'Bob'
 comida = 'Lasaña'
@@ -142,6 +145,7 @@ None # => None
 # Usa `is` en su lugar
 "etc" is None # => False
 None is None # => True
+
 # None, 0, y strings/listas/diccionarios/conjuntos vacíos(as) todos se evalúan como False.
 # Todos los otros valores son True
 bool(0) # => False
@@ -167,6 +171,7 @@ una_variable = 5
  # La convención es usar guiones_bajos_con_minúsculas
 una_variable # => 5
 otraVariable = 3
+
  # Aqui en formato Camel Case
 otraVariable # => 3
 # Acceder a variables no asignadas previamente es una excepción.
@@ -185,6 +190,7 @@ lista.append(1)#lista ahora es [1]
 lista.append(2)#lista ahora es [1, 2]
 lista.append(4)#lista ahora es [1, 2, 4]
 lista.append(3)#lista ahora es [1, 2, 4, 3]
+
 # Remueve del final de la lista con 'pop'
 lista.pop()
  # => 3 y lista ahora es [1, 2, 4]
@@ -216,12 +222,14 @@ lista[:3] # => [1, 2, 4]
 lista[::2] # =>[1, 4]
 # Invierte la lista
 lista[::-1] # => [3, 4, 2, 1]
+
 # Usa cualquier combinación de estos para crear trozos avanzados
 # lista[inicio:final:pasos]
 # Remueve elementos arbitrarios de una lista con 'del'
 del lista[2] # lista ahora es [1, 2, 3]
 # Puedes sumar listas
 lista + otra_lista # => [1, 2, 3, 4, 5, 6] - Nota: lista y otra_lista no se tocan
+
 # Concatenar listas con 'extend'
 lista.extend(otra_lista) # lista ahora es [1, 2, 3, 4, 5, 6]
 # Verifica la existencia en una lista con 'in'
@@ -237,11 +245,13 @@ afegir, esborrar, etc.).
 tupla = (1, 2, 3)
 tupla[0] # => 1
 tupla[0] = 3 # Levanta un error TypeError
+
 # También puedes hacer todas esas cosas que haces con listas
 len(tupla) # => 3
 tupla + (4, 5, 6) # => (1, 2, 3, 4, 5, 6)
 tupla[:2] # => (1, 2)
 2 in tupla # => True
+
 # Puedes desempacar tuplas (o listas) en variables
 a, b, c = (1, 2, 3)
  # a ahora es 1, b ahora es 2 y c ahora es 3
@@ -329,14 +339,15 @@ Ací veiem exemples de com utilitzar l'estructura de control de flux “if”:
 # Creemos una variable para experimentar
 some_var = 5
 # Aquí está una declaración de un 'if'. ¡La indentación es significativa en Python!
+
 # imprime "una_variable es menor que 10"
 if una_variable > 10:
 print("una_variable es completamente mas grande que 10.")
 elif una_variable < 10:
- # Este condición 'elif' es opcional.
+# Este condición 'elif' es opcional.
 print("una_variable es mas chica que 10.")
 else:
- # Esto también es opcional.
+# Esto también es opcional.
 print("una_variable es de hecho 10.")
 ```
 
@@ -390,9 +401,9 @@ Python 3 permet el maneig d'excepcions mitjançant “try” i “catch” com s
 ```python
 # Maneja excepciones con un bloque try/except
 try:
-
 # Usa raise para levantar un error
 raise IndexError("Este es un error de indice")
+
 except IndexError as e:
 pass # Pass no hace nada (“pasa”). Usualmente aquí harias alguna recuperacion.
 ```
@@ -416,6 +427,7 @@ print(i) # Imprime uno, dos, tres
 
 # Aunque no podemos selecionar un elemento por su índice.
 nuestro_iterable[1] # Genera un TypeError
+
 # Un iterable es un objeto que sabe como crear un iterador.
 nuestro_iterator = iter(nuestro_iterable)
 # Nuestro iterador es un objeto que puede recordar el estado mientras lo recorremos.
@@ -447,6 +459,7 @@ print("x es {} y y es {}".format(x, y))
 
 # Llamando funciones con parámetros
 add(5, 6) # => imprime "x es 5 y y es 6" y retorna 11
+
 # Otra forma de llamar funciones es con argumentos de palabras claves
 add(y=6, x=5) # Argumentos de palabra clave pueden ir en cualquier orden.
 
@@ -523,8 +536,8 @@ Les classes en Python, hereten inicialment de l'objecte predefinit “object”.
 class Humano(object):
 
 # Un atributo de clase es compartido por todas las instancias de esta clase
-
 especie = "H. sapiens"
+
 # Constructor basico
 def __init__(self, nombre):
 
@@ -577,6 +590,7 @@ Python permet importar mòduls, tant creats per nosaltres, com a existents en el
 # Puedes importar módulos
 import math
 print(math.sqrt(16)) # => 4.0
+
 # Puedes obtener funciones específicas desde un módulo
 from math import ceil, floor
 print(ceil(3.7)) # => 4.0
