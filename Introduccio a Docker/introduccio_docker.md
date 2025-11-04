@@ -198,31 +198,31 @@ A continuació, vam realitzar una xicoteta comparativa en l’àmbit de rendimen
     - [https://github.com/moby/hyperkit](https://github.com/moby/hyperkit)
 
 Més informació a:
-- [https://docs.docker.com/docker-for-windows/release-notes/]
-- [https://docs.docker.com/desktop/]
-- [https://docs.docker.com/docker-for-mac/release-notes/]
+- [https://docs.docker.com/docker-for-windows/release-notes/](https://docs.docker.com/docker-for-windows/release-notes/)
+- [https://docs.docker.com/desktop/](https://docs.docker.com/desktop/)
+- [https://docs.docker.com/docker-for-mac/release-notes/](ttps://docs.docker.com/docker-for-mac/release-notes/)
 
 ## 5.4 Docker corrent contenidors Windows Server Core i contenidor MacOs
 Encara que l'ús habitual de Docker és llançar contenidors amb sistemes Linux, noves millores han permés que es puguen utilitzar contenidors que llancen altres sistemes operatius.
 
 Docker en sistemes Windows pot llançar contenidors que corren el sistema operatiu "Windows Server Core". Ha de virtualitzar amb un sistema amfitrió Windows. Més informació a:
-- [https://blog.ipswitch.com/creating-your-first-windows-container-with-docker-for-windows]
-- [https://hub.docker.com/_/microsoft-windows-servercore]
+- [https://blog.ipswitch.com/creating-your-first-windows-container-with-docker-for-windows](https://blog.ipswitch.com/creating-your-first-windows-container-with-docker-for-windows)
+- [https://hub.docker.com/_/microsoft-windows-servercore](https://hub.docker.com/_/microsoft-windows-servercore)
 
-Així mateix, és possible llançar un contenidor que execute Mac OS en un sistema Linux que tinga instal·lat KVM, utilitzant el projecte disponible a [https://github.com/sickcodes/Docker-OSX]
+Així mateix, és possible llançar un contenidor que execute Mac OS en un sistema Linux que tinga instal·lat KVM, utilitzant el projecte disponible a [https://github.com/sickcodes/Docker-OSX](https://github.com/sickcodes/Docker-OSX)
 
 # **6. CONCLUSIÓ**
 En aquesta part de la unitat hem repassat conceptes bàsics sobre virtualització. Després d'això, hem procedit a introduir el concepte de contenidor i les seues característiques, centrant-nos en contenidors Linux. Compresos els conceptes de contenidors, hem introduït la solució Docker, la qual instal·larem i utilitzarem més endavant.
 
 # **7. BIBLIOGRAFIA**
-[1] WizardZines "How contenidors work" [https://wizardzines.com/zines/containers/]
-[2] Docker Docs [https://docs.docker.com/]
-[3] Linux contenidors [https://linuxcontainers.org/]
-[4] US Level virtualization [https://en.wikipedia.org/wiki/OS-level_virtualization]
+[1] WizardZines "How contenidors work" [https://wizardzines.com/zines/containers/](https://wizardzines.com/zines/containers/)
+[2] Docker Docs [https://docs.docker.com/](https://docs.docker.com/)
+[3] Linux contenidors [https://linuxcontainers.org/](https://linuxcontainers.org/)
+[4] US Level virtualization [https://en.wikipedia.org/wiki/OS-level_virtualization](https://en.wikipedia.org/wiki/OS-level_virtualization)
 
 # **8. LLICÈNCIES D'ELEMENTS EXTERNS UTILITZATS**
 Figura 1: Imatge amb llicència Apache 2.0. Font:
-[https://github.com/docker/docker.github.io/blob/master/engine/images/architecture.svg]
+[https://github.com/docker/docker.github.io/blob/master/engine/images/architecture.svg](https://github.com/docker/docker.github.io/blob/master/engine/images/architecture.svg)
 Figura 2: Imatge amb llicència CC BY SA. Font:
-[https://commons.wikimedia.org/wiki/File:Docker-containerized-and-vm-transparent-bg.png]
-Figura 3: Imatge amb llicència CC BY SA. Font: [https://www.flickr.com/photos/68359921@N08/50125348052/]
+[https://commons.wikimedia.org/wiki/File:Docker-containerized-and-vm-transparent-bg.png](https://commons.wikimedia.org/wiki/File:Docker-containerized-and-vm-transparent-bg.png)
+Figura 3: Imatge amb llicència CC BY SA. Font: [https://www.flickr.com/photos/68359921@N08/50125348052/](https://www.flickr.com/photos/68359921@N08/50125348052/)
