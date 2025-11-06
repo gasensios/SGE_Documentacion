@@ -341,5 +341,5 @@ docker-compose exec db mysql --version
 El comandament "rm" elimina tots els contenidors aturats segons la plantilla determinada en **"docker-compose.yml"**. El detall del seu funcionament està definit en [https://docs.docker.com/compose/reference/rm/](https://docs.docker.com/compose/reference/rm/)
 
 # 5. BIBLIOGRAFIA
-[1] Docker Docs [https://docs.docker.com/]
-[2] Docker Compose [https://docs.docker.com/compose/]
+[1] Docker Docs [https://docs.docker.com/](https://docs.docker.com/)
+[2] Docker Compose [https://docs.docker.com/compose/](https://docs.docker.com/compose/)

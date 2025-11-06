@@ -39,11 +39,10 @@ docker images -f=reference="u*:*04"
 
 >❕ Atenció: no confondre aquest comandament amb "docker image" (sense la s final).
 
-Més informació a [https://docs.docker.com/engine/reference/commandline/images/]
+Més informació a [https://docs.docker.com/engine/reference/commandline/images/](https://docs.docker.com/engine/reference/commandline/images/)
 
 ## 2.2 Llistant imatges per a baixar
 Podem obtenir informació d'imatges que podem descarregar en el registre (per defecte, Docker Hub) utilitzant el comandament "docker search". Per exemple amb la següent comanda:
-
 ```
 docker search Ubuntu
 ```
@@ -54,7 +53,6 @@ Ens apareixen aquelles imatges disponibles en el registre (Docker Hub) amb aques
 ## 3.1 descarregant imatges amb "docker pull"
 Podem emmagatzemar imatges localment des del registre sense necessitat de crear un contenidor mitjançant la comanda "docker pull", clarament inspirat en sistemes de control de versions com "git". Per conéixer els seus noms i versions, podem usar la comanda "docker search" explicat
 anteriorment o visitar https://hub.docker.com/.
-
 ```
 docker pull alpine:3.10
 ```
@@ -65,7 +63,6 @@ Aquesta comanda ens descarrega la imatge "alpine" amb el tag "3.10", com veiem a
 
 ## 3.2 Observar l'historial d'una imatge descarregada
 Podeu observar l'historial d'una imatge descarregada, és a dir, en quines versions es basa, utilitzant la comanda "docker history". Per exemple amb:
-
 ```
 docker history nginx
 ```
@@ -76,7 +73,6 @@ Obtenim el següent:
 
 ## 3.3 Eliminant imatges amb "docker rmi"
 Amb la comanda "docker rmi" podem eliminar imatges emmagatzemades localment.
-
 ```
 docker rmi ubuntu:14.04
 ```
@@ -95,7 +91,6 @@ Aquí s'observa l'esborrat, excepte d'aquelles usades per un contenidor:
 ## 3.4 Eliminant contenidors amb "docker rm"
 Aprofitant que tractem l'esborrat d'imatges, comentem com esborrar contenidors aturats (si un contenidor està en marxa, ha de ser aturat abans de l'esborrat).
 Amb la següent ordre es pot esborrar un contenidor per identificador o nom
-
 ```
 docker rm IDENTIFICADOR/NOM
 ```
@@ -170,8 +165,8 @@ quedaria així:
 ![alt text](./imatges/image-23.png)
 
 Més informació dels comandaments en:
-- Docker commit [https://docs.docker.com/engine/reference/commandline/commit/]
-- Docker tag [https://docs.docker.com/engine/reference/commandline/tag/]
+- Docker commit [https://docs.docker.com/engine/reference/commandline/commit/](https://docs.docker.com/engine/reference/commandline/commit/)
+- Docker tag [https://docs.docker.com/engine/reference/commandline/tag/](https://docs.docker.com/engine/reference/commandline/tag/)
 
 # 5. EXPORTANT/IMPORTANT IMATGES LOCALS A/DES DE FITXERS
 Un cop tinguem una imatge local en el nostre sistema, podem fer una còpia d’aquesta, sigui com a còpia de seguretat o com a forma de transportar-la a altres sistemes mitjançant el comandament "docker save". Per exemple es pot fer d'aquestes dues formes:
@@ -191,14 +186,14 @@ o de forma alternativa
 docker load < copiaSeguridad.tar
 ```
 Més informació sobre els comandaments:
-- Docker save: [https://docs.docker.com/engine/reference/commandline/save/]
-- Docker load: [https://docs.docker.com/engine/reference/commandline/load/]
+- Docker save: [https://docs.docker.com/engine/reference/commandline/save/](https://docs.docker.com/engine/reference/commandline/save/)
+- Docker load: [https://docs.docker.com/engine/reference/commandline/load/](https://docs.docker.com/engine/reference/commandline/load/)
 
 # 6. PUJANT LES NOSTRES PRÒPIES IMATGES A UN REPOSITORI (DOCKER HUB)
 Podem pujar una imatge a un repositori (per defecte Docker Hub). Per a això, hem de realitzar els
 següents passos:
 ## 6.1 Pas 1: creant repositori per emmagatzemar la imatge en Docker Hub
-En primer lloc, heu de crear-vos un compte a [https://hub.docker.com] i logear-vos. Una vegada loguejats, heu d'accedir a "Repositories" i ací a "Create repository" de manera similar a com es veu en la imatge següent:
+En primer lloc, heu de crear-vos un compte a [https://hub.docker.com](https://hub.docker.com) i logear-vos. Una vegada loguejats, heu d'accedir a "Repositories" i ací a "Create repository" de manera similar a com es veu en la imatge següent:
 
 ![alt text](./imatges/image-24.png)
 
@@ -225,14 +220,14 @@ docker push sergi/prueba
 ```
 Un cop fet això, si la imatge és pública (o privada amb permisos), qualsevol podrà descarregar-la i crear contenidors usant "docker pull" o "docker run".
 Més informació de les ordres:
-- Docker login [https://docs.docker.com/engine/reference/commandline/login/]
-- Docker push [https://docs.docker.com/engine/reference/commandline/push/]
+- Docker login [https://docs.docker.com/engine/reference/commandline/login/](https://docs.docker.com/engine/reference/commandline/login/)
+- Docker push [https://docs.docker.com/engine/reference/commandline/push/](https://docs.docker.com/engine/reference/commandline/push/)
 
 # 7. GENERAR AUTOMÀTICAMENT LES NOSTRES PRÒPIES IMATGES MITJANÇANT DOCKERFILE
 Docker ens permet generar de forma automàtica les nostres pròpies imatges usant "docker build" i els anomenats "Dockerfile".
 ## 7.1 Editor Visual Studio Code i connectors associats a Docker
-Els fitxers "Dockerfile" poden crear-se amb qualsevol editor de text, però des d'aquí recomanem l'editor multiplataforma "Visual Studio Code" [https://code.visualstudio.com/]
-Per saber més sobre com utilitzar aquest editor podeu fer servir [https://code.visualstudio.com/learn]
+Els fitxers "Dockerfile" poden crear-se amb qualsevol editor de text, però des d'aquí recomanem l'editor multiplataforma "Visual Studio Code" [https://code.visualstudio.com/](https://code.visualstudio.com/)
+Per saber més sobre com utilitzar aquest editor podeu fer servir [https://code.visualstudio.com/learn](https://code.visualstudio.com/learn)
 En instal·lar-lo, si detecta Docker instal·lat en el sistema, el mateix editor ens suggerirà una sèrie de connectors. Val la pena instal·lar-los. Si no, sempre podeu buscar a connectors manualment. Jo personalment, us recomane aquests dos que podeu veure a la imatge:
 
 ![alt text](./imatges/image-26.png)
@@ -286,7 +281,7 @@ aquí simplement, hi hauria més capes intermèdies, com s'observa en "docker hi
 
 ![alt text](./imatges/image-30.png)
 
-Els comandaments vistos (FROM, RUN i CMD) admeten diferents formats. Per saber-ne més podem visitar la seua ajuda: [https://docs.docker.com/engine/reference/builder/]
+Els comandaments vistos (FROM, RUN i CMD) admeten diferents formats. Per saber-ne més podem visitar la seua ajuda: [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)
 
 ## 7.3 Altres ordres importants de Dockerfile
 En crear un "Dockerfile" hi ha multitud d'ordres. A continuació expliquem les ordres més importants a utilitzar:
@@ -305,22 +300,25 @@ EXPOSE 80 443 8080
 ADD i COPY són ordres per copiar fitxers de la màquina amfitrió al nou contenidor. Es recomana usar COPY, excepte que vulguem descomprimir un "zip", que ADD permet la seua descompressió.
 
 Més informació sobre la diferència entre ADD i COPY:
-[https://nickjanetakis.com/blog/docker-tip-2-the-difference-between-copy-and-add-in-a-dockerile]
+[https://nickjanetakis.com/blog/docker-tip-2-the-difference-between-copy-and-add-in-a-dockerile](https://nickjanetakis.com/blog/docker-tip-2-the-difference-between-copy-and-add-in-a-dockerile)
 
 Exemple d'ús de ADD:
 ```
 ADD ./mifichero.zip /var/www/html
 ```
+
 Descomprimirà el contingut de"mifichero.zip" al directori destí de la nova imatge.
 
 Exemple d'ús de COPY:
 ```
 COPY ./mifichero.zip /var/www/html
 ```
+
 o fins i tot accedint des del web.
 ```
 COPY http://miservidor.commifichero.zip /var/www/html
 ```
+
 En aquest cas, copiarà el fitxer **"mifichero.zip"** al directori destí de la nova imatge.
 
 ### 7.3.3 Comando ENTRYPOINT
@@ -348,6 +346,7 @@ CMD mkdir tmp
 WORKDIR /var/www/html
 CMD mkdir tmp
 ```
+
 Crearà la carpeta **"tmp"** tant en **"/root"** com a **"/var/www/html"**. Si els directoris **"/root"** o **"/var/www/html"** no haguessen existit, els haguera creat.
 
 ### 7.3.6 Comando ENV
@@ -355,6 +354,7 @@ La comanda ENV ens permet definir variables d'entorn per defecte en la imatge.
 ```
 ENV v1=”valor1” v2=”valor2”
 ```
+
 Això definirà les variables d'entorn "v1" i "v2" amb els valors "valor1" i "valor2".
 
 ### 7.3.7 Altres ordres útils: ARG, VOLUME, LABEL, HEALTHCHECK
@@ -375,12 +375,12 @@ En crear imatges, és habitual augmentar la mida de les imatges base. Alguns con
 - Utilitza ordres de neteja després instal·lacions amb **"apt"**, com ara: **"rm -rf /var/lib/apt/lists/*"** després de crear una imatge per esborrar les llistes generades a realitzar "apt update".
   - **"apt-get purge --auto-remove && apt-get clean"** per eliminar temporals d'apt.
 - En utilitzar "apt install" usar l’opció "no-install-recommend", perquè no instal·le paquets recomanats associats al paquet instal·lat.
-- Analitza els teus "Dockerfile" amb [https://www.fromlatest.io/#/] i segueix els seus consells.
+- Analitza els teus "Dockerfile" amb [https://www.fromlatest.io/#/](https://www.fromlatest.io/#/) i segueix els seus consells.
 Més informació a:
-- [https://medium.com/sciforce/strategies-of-docker-images-optimization-2ca9cc5719b6]
-- [https://hackernoon.com/tips-to-reduce-docker-image-sizes-876095da3b34]
+- [https://medium.com/sciforce/strategies-of-docker-images-optimization-2ca9cc5719b6](https://medium.com/sciforce/strategies-of-docker-images-optimization-2ca9cc5719b6)
+- [https://hackernoon.com/tips-to-reduce-docker-image-sizes-876095da3b34](https://hackernoon.com/tips-to-reduce-docker-image-sizes-876095da3b34)
   
 # 9. BIBLIOGRAFIA
-[1] Docker Docs [https://docs.docker.com/]
-[2] Visual Studio Code Learn [https://code.visualstudio.com/learn]
-[3] FROM: latest [https://www.fromlatest.io/#/]
+[1] Docker Docs [https://docs.docker.com/](https://docs.docker.com/)
+[2] Visual Studio Code Learn [https://code.visualstudio.com/learn](https://code.visualstudio.com/learn)
+[3] FROM: latest [https://www.fromlatest.io/#/](https://www.fromlatest.io/#/)
