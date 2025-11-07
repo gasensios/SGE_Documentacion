@@ -83,8 +83,26 @@ Hi ha diversos entorns de desenvolupament que permeten desenvolupar mòduls per 
 Recomanem en el desenvolupament usar un sistema de control de versions “git” juntament amb plataformes com [https://github.com](https://github.com) o [https://gitlab.com](https://gitlab.com). 
 
 **<u>PyCharm</u>** 
-Recomane el ús d'aquest editor molt recomanat en Pycharm [https://www.jetbrains.com/es-es/pycharm/](https://www.jetbrains.com/es-es/pycharm/). 
+Recomane el ús d'aquest editor en Pycharm [https://www.jetbrains.com/es-es/pycharm/](https://www.jetbrains.com/es-es/pycharm/). 
 Per defecte no reconeix els elements del framework Odoo, però sí els del llenguatge Python. Si volem facilitar el desenvolupament podem instal·lar l’extensió d’Odoo Pycharm Templates [https://github.com/mohamedmagdy/odoo-pycharm-templates](https://github.com/mohamedmagdy/odoo-pycharm-templates).
+
+> **IMPORTANT: En cas de problemes per importar la llibreria Odoo (al fer «from» o «import» de la llibreria odoo)**
+
+- Verifica que Odoo esté instalat correctament
+  - Odoo no se instala com un paquet estándar de Python amb «pip install odoo». Normalment es clona desde GitHub, es te que clonar desde la arrel de la carpeta del projecte:
+``` 
+git clone https://www.github.com/odoo/odoo --depth 1 --branch 17.0 
+```
+
+  - Agrega la ruta de Odoo al PYTHONPATH: tras  instal·lar l’extensió d’Odoo en pycharm i el paquet estándar de Python, pasarem a configurar la ruta de Odoo, per a poder, gestionar les llibreries. Dins de la configuració es te que configurar al menys:
+     - Odoo-bin path
+     - Working directory
+     - Environment variables: **PYTHONPATH=/home/gasensio/Documentos/SGE/DOCKER/odoo;PYTHONUNBUFFERED=1** 
+
+![alt text](./imatges/image-8.png)
+
+> NOTA: En el meu cas la carpeta del projecte es /home/gasensio/Documentos/SGE/DOCKER
+
 
 **<u>Visual Studio Code</u>** 
 Un altre editor recomanat es Visual Studio Code. És molt potent i posseeix un gran ecosistema de “plugins” per ampliar la seua funcionalitat [https://code.visualstudio.com/](https://code.visualstudio.com/)
