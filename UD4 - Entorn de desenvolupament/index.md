@@ -103,6 +103,16 @@ git clone https://www.github.com/odoo/odoo --depth 1 --branch 17.0
 
 > NOTA: En el meu cas la carpeta del projecte es /home/gasensio/Documentos/SGE/DOCKER
 
+**<u>¡IMPORTANTE!</u>**: En cas de no poder instal·lar el plugin de Odoo en Pycharm es necessari realitzar la següent acció:
+- Dins de l´estructura del projecte es té que direccionar a la carpeta de la llibreria de Odoo, que se ha descargado previamente, per això es necessari accedir a Files => Settings => Project Structure:
+
+![alt text](./imatges/image-9.png)
+
+Es deu seleccionar la carpeta a on es guarda la llibreria de Odoo (quan hem utilitzat el comandament "git"):
+
+![alt text](./imatges/image-10.png)
+
+> NOTA: En el meu cas la carpeta del projecte es /home//home/gasensio/Documentos/SGE/DOCKER/odoo
 
 **<u>Visual Studio Code</u>** 
 Un altre editor recomanat es Visual Studio Code. És molt potent i posseeix un gran ecosistema de “plugins” per ampliar la seua funcionalitat [https://code.visualstudio.com/](https://code.visualstudio.com/)
