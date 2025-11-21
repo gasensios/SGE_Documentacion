@@ -7,7 +7,7 @@ has_children: true
 has_toc: true
 ---
 
-# 1. Guia d'estudi
+# **1. Guia d'estudi**
 ## Coneixements previs requerits
 - Ús bàsic de sistemes operatius.
 - Coneixement de comandaments de Linux.
@@ -29,7 +29,7 @@ Teoria i activitats no avaluables, a compartir al fòrum.
 Aquest document està basat en els apunts d’aquesta assignatura impartida pels professors:
 - García Barea, Sergi.
 
-# 2.INTRODUCCIÓ
+# **2.INTRODUCCIÓ**
 
 En la unitat 03 s’explica com instal·lar Odoo, tant amb una configuració pensada per a un entorn de producció com una configuració pensada per a
 un entorn de desenvolupament. En aquesta unitat insistirem un poc més en
@@ -48,7 +48,7 @@ A continuació ampliarem el mòdul base anterior, afegint coses per augmentar la
 
 El desenvolupament de mòduls d’Odoo pot arribar a ser molt complex i només els programadors experts són capaços d’aprofundir des del principi sense veure com va funcionant. En la següent unitat ja aprofundirem en major detall en la programació de mòduls per Odoo. 
 
-# 3. CREANT UN DIRECTORI PER A MÒDULS
+# **3. CREANT UN DIRECTORI PER A MÒDULS**
 
 Com ja vam veure en la unitat 03, és important tenir un directori per incloure i desenvolupar mòduls en Odoo. En aquest apartat comentarem com posar en marxa aquest directori tant en una instal·lació manual com
 utilitzant Docker. 
@@ -77,7 +77,7 @@ Els mòduls han de poder ser almenys llegits per l’usuari “Odoo”, que és 
 **<u>Instal·lació mitjançant Docker i Docker Compose</u>** 
 Si poseu en marxa Odoo en mode desenvolupament amb Docker i Docker Compose, tal com era suggerit a la unitat 03, simplement tindreu el vostre directori de mòduls llest per treballar. Aquest directori és l’anomenat “volumesOdoo/addons”, que tindreu mapejat en la vostra màquina amfitriona.
 
-# 4.  ENTORN DE DESENVOLUPAMENT
+# **4.  ENTORN DE DESENVOLUPAMENT**
 
 Hi ha diversos entorns de desenvolupament que permeten desenvolupar mòduls per Odoo. Els més utilitzats són “Visual Studio Code” i “PyCharm”. A més és important fer servir algunes eines addicionals.
 Recomanem en el desenvolupament usar un sistema de control de versions “git” juntament amb plataformes com [https://github.com](https://github.com) o [https://gitlab.com](https://gitlab.com). 
@@ -143,7 +143,7 @@ PyCharm també permet l’ús d’un sistema de control de versions Git des del 
 - [https://programmerclick.com/article/169045515/](https://programmerclick.com/article/169045515/) 
 - [https://www.jetbrains.com/help/pycharm/set-up-a-git-repository.html](https://www.jetbrains.com/help/pycharm/set-up-a-git-repository.html)
 
-# 5. ACTIVANT EL MODE “DESENVOLUPADOR” EN ODOO 17
+# **5. ACTIVANT EL MODE “DESENVOLUPADOR” EN ODOO 17**
 En aquest URL de la guia de Odoo 17 s’expliquen les diferents vies existents per activar el mode desenvolupador. Aquesta manera ens permet depurar els nostres mòduls Odoo gràficament.
 - [https://www.odoo.com/documentation/17.0/es/applications/general/developer_mode.html](https://www.odoo.com/documentation/17.0/es/applications/general/developer_mode.html)
 
@@ -155,7 +155,7 @@ Podeu trobar l’extensió per:
 
 >❕Atenció: per activar el mode desenvolupador des de la interfície Odoo, s'ha d'haver instal·lat almenys un mòdul (per exemple, Vendes).
 
-# 6.  EL NOSTRE PRIMER MÒDUL: “HOLA MÓN”
+# **6.  EL NOSTRE PRIMER MÒDUL: “HOLA MÓN”**
 
 Un mòdul d’Odoo serveix per a ampliar les funcionalitats d’aquest sistema ERP i pot tenir molts propòsits diferents.
 
@@ -183,7 +183,7 @@ Després d’això, eliminant els filtres de cerca per defecte i buscant “hola
 
 Ara podrem instal·lar el nostre mòdul per provar-ho (tot i que aquest exemple no fa res).
 
-# 7.  CREANT MÒDULS EN ODOO
+# **7.  CREANT MÒDULS EN ODOO**
 
 • Creant mòduls amb “Odoo Scaffold” Quan vam crear un mòdul, diguem que es converteix en una “aplicació” dins “d’una altra aplicació més gran” que és Odoo sent aquesta aplicació pràcticament independent de la resta d’Odoo.
 
@@ -253,7 +253,7 @@ Si estem treballant en mode desenvolupament (opció “–dev=all” en llançar
 
 >❕Atenció: aquesta pràctica és molt còmoda per desenvolupar, però no s'usa en entorns de producció per motius tant de seguretat com de rendiment.
 
-# 8.  EXEMPLE DE MÒDUL “LLISTA DE TASQUES”
+# **8.  EXEMPLE DE MÒDUL “LLISTA DE TASQUES”**
 
 Per posar en marxa el nostre primer mòdul funcional, utilitzarem un exemple comentat on crearem una senzilla “Llista de tasques”. 
 
@@ -378,7 +378,7 @@ Fitxer “views.xml”:
 </odoo>
 ```
 
-# 9. BIBLIOGRAFIA
+# **9. BIBLIOGRAFIA**
 
 - Sistemes de Gestió Empresarial IOC: 
   [https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html](https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html) 

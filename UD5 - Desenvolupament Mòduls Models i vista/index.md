@@ -7,31 +7,7 @@ has_children: true
 has_toc: true
 ---
 
-# 1. Guia d'estudi
-## Coneixements previs requerits
-- Ús bàsic de sistemes operatius.
-- Coneixement de comandaments de Linux.
-- Coneixements avançats de programació.
-- Coneixements de Python.
-- Desplegament d’Odoo.
-- Treball bàsic amb mòduls d’Odoo.
-
-## Objectius
-- Crear models de dades per mòduls d’Odoo.
-- Crear vistes per als models de dades en mòduls d’Odoo.
-
-## Continguts
-Models i vistes per a desenvolupar mòduls d’Odoo.
-
-## Activitats
-És molt important llegir els apunts i dur a terme les tasques no avaluables.
-
-
-## Bibliografia
-A continuació oferim en ordre alfabètic el llistat d’autors que han fet aportacions a aquest document:
-- García Barea, Sergi
-
-# 1. Guia d'estudi
+# **1. Guia d'estudi**
 ## Coneixements previs requerits
 - Ús bàsic de sistemes operatius.
 - Coneixement de comandaments de Linux.
@@ -53,7 +29,7 @@ Teoria i activitats no avaluables, a compartir al fòrum.
 Aquest document està basat en els apunts d’aquesta assignatura impartida pels professors:
 - García Barea, Sergi.
 
-# 2.INTRODUCCIÓ
+# **2.INTRODUCCIÓ**
 
 Odoo és un ERP-CRM de codi obert que es distribueix sota dos tipus de desplegament:
 - On-premise en GNU/Linux o Windows amb dues versions (Community, gratuïta i Enterprise, de pagament).
@@ -103,7 +79,7 @@ Aquest framework es basa en alguns dels principis generals dels RAD moderns:
 
 > 📖 Important: ja que Odoo facilita la traducció, és una bona pràctica programar tot en anglés, tant el nom de les variables com els textos que vam mostrar als usuaris. Posteriorment, podem afegir les traduccions necessàries.
 
-# 3. La base de dades d'Odoo
+# **3. La base de dades d'Odoo**
 Gràcies a l'ORM, no hi ha un disseny definit de la base de dades. La base de dades d'una empresa pot tenir algunes taules molt diferents d’altres en funció del mapatge que l'ORM haja fet amb les classes actives en aquesta empresa. Per tant, és difícil trobar un disseny “entitat-relació” o una cosa similar en la documentació d'Odoo.
 Cal afegir que Odoo té alguns models ja creats i ben documentats com:
 - “res.partner” (clients, proveïdors, etc.).
@@ -119,7 +95,7 @@ En la base de dades, el punt se substitueix per una barra baixa.
 
 > 💬  Interessant: aconsellem dedicar uns minuts a conéixer la base de dades usant el “mode desenvolupador” i el client de terminal de PostgreSQL. Per a això, podem repassar les consultes SQL traient, per exemple, el nom dels clients que no han fet cap comanda.
     
-# 4. Composició d'un mòdul
+# **4. Composició d'un mòdul**
 Odoo és un programa modular. Tant el servidor com el client es componen de mòduls que estenen al mòdul “base”. Qualsevol cosa que es vulga modificar en Odoo s'ha de fer creant un mòdul.
 
 > 📖 Important: ja que Odoo és de codi obert i tot el codi està en Python, que no és un llenguatge compilat, podem alterar els fitxers Python o XML dels mòduls oficials, canviant el que ens interesse.
@@ -158,7 +134,7 @@ Una vegada executat aquest comando, tenim en la ruta indicada, l'estructura bàs
 
 >❕Atenció: encara que usar “scaffold” ens proporciona una base, durant la unitat pot ser bona idea basar-se en exemples proporcionats a classe.
     
-# 5. Models
+# **5. Models**
 ## 5.1  Introducció als models en Odoo
 Els models són una abstracció pròpia de molts frameworks i relacionada amb l'ORM. Un model es defineix com una classe Python que hereta de la classe “models.Model”. En heretar d'aquesta classe, adquireix unes propietats de manera transparent per al programador. A partir d'aquest moment, les classes del llenguatge de programació queden per davall d'un nivell més d'abstracció.
 
@@ -447,7 +423,7 @@ _sql_constraints = [
 
 Les “SQL contraints” són una llista de tuples en les quals està el nom de la restricció, la restricció SQL i el missatge en cas d’errada.
 
-# 6. Vista
+# **6. Vista**
 
 ![alt text](./imatges/image6.png)
 
@@ -814,7 +790,7 @@ L'etiqueta “filter” estableix un filtre predefinit que s'aplicarà prement e
 
 L'etiqueta “filter” també pot servir per a agrupar en funció d'un criteri. Per a això, cal posar en el “context” la clau “group_by”, de manera que farà una cerca i agruparà pel criteri que li diguem. Hi ha un tipus especial d'agrupació per data (últim exemple) en la qual podem especificar si volem agrupar per dia, mes o uns altres.
 
-# 7. Seguretat en models Odoo
+# **7. Seguretat en models Odoo**
 Odoo necessita conéixer que permisos tenen els usuaris/rols del sistema per a cada model particular del nostre mòdul. En el fitxer “__manifest__.py” s'indica un la ruta a un fitxer on es detallen aquests permisos, d'una forma similar a:
 
 ```python
@@ -858,10 +834,10 @@ Amb aquest exemple, hem creat el “grupo_bibliotecario” i ho hem poblat afegi
 
 Més informació en www.odoo.yenthevg.com/creating-security-groups-odoo/ i en [https://www.odoo.com/documentation/17.0/es/developer/tutorials/server_framework_101/04_securityintro.html](https://www.odoo.com/documentation/17.0/es/developer/tutorials/server_framework_101/04_securityintro.html)
 
-# 8. Mòduls d'exemple amb comentaris
+# **8. Mòduls d'exemple amb comentaris**
 Es poden trobar exemples de mòduls d'Odoo comentats amb els conceptes tractats durant la unitat en [https://github.com/sergarb1/OdooModulosEjemplos](https://github.com/sergarb1/OdooModulosEjemplos)
 
-# 9. Bibliografia
+# **9. Bibliografia**
 [https://www.odoo.com/documentation/master/](https://www.odoo.com/documentation/master/)
 [https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html](https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html)
 [https://castilloinformatica.es/wiki/index.php?title=Odoo](https://castilloinformatica.es/wiki/index.php?title=Odoo)
