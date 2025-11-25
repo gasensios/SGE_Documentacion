@@ -203,7 +203,7 @@ Ací un exemple de “Selection”:
 
 ```python
 type = fields.Selection([('1','Basic'),('2','Intermediate'),('3','Completed')])
-aselection = fields.Selection(selection='a_function_name') # se puede definir su contenido en una función.
+aselection = fields.Selection(selection='a_function_name') # se puede definir su contenido en una función..
 ```
 
 Tots els “fields” esmentats tenen un constructor que funciona de la mateixa manera que en l'exemple anterior. Poden tenir un nom, un valor per defecte, o fins i tot pot definir-se el seu contingut mitjançant una funció.
