@@ -110,7 +110,7 @@ record.mapped('partner_id')
 record.mapped('partner_id.bank_ids')
 ```
 
-## **1.1  Enviroment**
+## **2.1  Enviroment**
 L'anomenat “enviroment” o “env” guarda algunes dades contextuals interessants per a treballar amb l'ORM, com el cursor en la base de dades, l'usuari actual o el context (que guarda algunes metadades).
 
 Tots els “recordset” tenen un “enviroment” accessible mitjançant l'atribut “env”. Quan volem accedir a un “recordset” dins d'un altre, podem usar “env”:
@@ -133,7 +133,7 @@ El “context” ja ho hem usat anteriorment i ho usarem en aquesta unitat didà
   - Això també funciona en els “action” si volem un “field” per defecte. El “active_id” també està en el “context” i es pot accedir des d'una funció amb la instrucció self.env.context.get('active_id').
 - En la vista “search” també guardem el criteri d'agrupació amb el “group_by” en l'atribut “context”.
          
-## **1.2  Mètodes de l’ORM**
+## **2.2  Mètodes de l’ORM**
 Vegem ara d'un en un els mètodes que proporciona l'ORM d'Odoo per a facilitar la gestió dels “recordset”:
 search():
 A partir de la definició d'un domini extrau un “recordset” amb els registres que coincideixen
@@ -224,7 +224,7 @@ Es tracta d'un atribut dels “recordsets” que té una llista de les “ids”
 **copy():**
 Retorna una còpia del “recordset” actual.
 
-## 1.3  Onchange
+## 2.3  Onchange
 En els formularis existeix la possibilitat que s'execute un mètode quan es canvia el valor d'un “field”. El seu ús habitual sol ser per a canviar el valor d'altres “fields” o avisar a l'usuari que s'ha equivocat en alguna cosa. Per a utilitzar-ho usarem el decorador “@api.onchange”. 
 
 > 💬 Interessant: “onchange” té implicacions en la vista i el controlador. Tot el codi s'escriu en Python quan es defineix el model, però Odoo fa que el framework de Javascript associe un “action” al fet de modificar un “field” que demana al servidor executar el “onchange” i s'espera al resultat de la funció per a modificar “fields” o avisar a l'usuari. 
@@ -275,7 +275,7 @@ def _filter_empleado(self):
 En aquest tercer exemple el que retorna és un“domain”. Això provoca que el “field Many2one” al qual afecta tinga un filtre “definit en temps d'edició” del formulari.
 > 💬 Interessant: si l'usuari s'equivoca hi ha tres maneres de tractar amb aqueix error: “constraints”, “onchange” i sobreescriure el mètode “write” i “create” per a comprovar que no hi ha errors (només recomanable si no es pot fer amb constraints). Les “contraints” i “onchange” es complementen bé: amb la “constraint”: prevens l'error de l'usuari i amb el “onchange” prevens realment abans de guardar-lo en la base de dades.
 
-# 2. Fitxers de dades
+# 3. Fitxers de dades
 Ja hem utilitzat fitxers de dades creant les vistes. Si ens fixem, observarem que és un XML amb una etiqueta “<odoo>”, altra “<data>” i dins els “<record>” de cada vista. Així és com li diem a Odoo el que s'ha de guardar en la base de dades.
 ```xml
 <odoo>
@@ -334,7 +334,7 @@ També es pot usar per a esborrar registres:
 <delete model="cine.session" id="session_cine1_1"></delete>
 ```
 
-# 3. Reports (Informes)
+# 4. Reports (Informes)
 És molt probable necessitar imprimir alguns documents a partir d'Odoo o simplement enviar-los en PDF per correu. Per a això estan els “reports” (informes). Tots els ERP tenen un sistema d'extracció de documents i generalment tots el fan mínim en PDF, com és el cas d'Odoo.
 
 El format PDF té les seues peculiaritats i és complicat manejar-lo directament com es fa amb HTML. Per això Odoo confia en un renderizador d'HTML a PDF que utilitza el motor de WebKit (que és un dels motors de renderitzat lliures més populars). Per a això fa una anomenada al sistema perquè execute “wkhtmltopdf” que és un programa que transforma per terminal un HTML en PDF. És necessari, per tant, haver-ho instal·lat en el sistema. 
@@ -374,7 +374,7 @@ Vegem un exemple senzill:
 
 Com es pot veure, QWeb té una variable anomenada “docs”, que és la llista de registres a mostrar en l'informe.
 
-# 4. Herència
+# 5. Herència
 Odoo proporciona mecanismes d’herència per a less tres parts del MVC.  En el cas de l’herència en el model, el ORM permet 3 tipus: De classe, per prototip i per delegació:
 
 | Tipus d'Herència | Descripció | Implementació Python/Odoo |
@@ -453,7 +453,7 @@ Odoo quan mostrarà alguna cosa que li indica un “action”, cerca la vista qu
 
 Això generarà en la taula intermèdia del “Many2many” amb les vistes les relacions que consultarà Odoo abans de triar una vista per prioritat.
 
-# 5. Wizards (Asistents)
+# 6. Wizards (Asistents)
 Un “wizard” és un assistent que ens ajuda pas a pas a realitzar alguna gestió en Odoo. Els formularis són suficients per a introduir dades, però a vegades poden ser poc intuïtius o confusos.
 En realitat, un “wizard” no utilitza cap tecnologia específica que no utilitzen altres parts d'Odoo. Es tracta d'un formulari mostrat generalment en una finestra modal per damunt de la finestra principal. Les dades d'aqueix formulari no són permanents en la base de dades, ja que aquest només és una ajuda per a, finalment, modificar la base de dades quan acabem amb assistent.
 Per a fer aqueixes dades no persistents s'usa un tipus de model anomenat “TransientModel”. Aquest es guarda temporalment en la base de dades i és accessible solo durant l'execució del “wizard”.   
@@ -706,7 +706,7 @@ class MyController(http.Controller):
        }
 ```
 
-# 6. Web controllers
+# 7. Web controllers
 Odoo té, de manera oficial, 3 clients web diferents: El “backend”, el TPV (Terminal Punt de Venda) i el “frontend”. Tots tres funcionen de manera independent i amb algunes diferències. Per a la gestió de l'empresa normalment és suficient amb el “backend”, però per al TPV o la pàgina web no sempre és fàcil o convenient usar la solució d'Odoo.
 
 Odoo proporciona una manera de connectar-se al seu servidor, mitjançant l'ús d'XML-RPC, la qual és prou simple i funciona bé quan s'està connectant alguna aplicació feta amb PHP, Python o Java, per exemple. De fet, en la documentació oficial hi ha exemples per a aquests 3 llenguatges.
@@ -731,7 +731,7 @@ Com veiem, hi ha moltes opcions i quasi sempre es poden fer les coses de moltes 
 Les dues últimes opcions són les que anem a explorar en aquest apartat.
 
 
-## 6.1  ¿Què son els Web Controllers?
+## 7.1  ¿Què son els Web Controllers?
 Es tracta de funcions que responen a “URIs” (Identificador de Recursos Uniformes) concretes.
 El servidor Odoo té un sistema de rutes per a atendre les peticions. Per exemple, quan accedim a “/web” el que proporciona és el “backend”. Si accedim a “/post/web” el que ens proporciona és el “Point Of Sale”. Nosaltres podem crear les nostres pròpies rutes per a obtenir pàgines web personalitzades o altres dades com XML o JSON.
  
@@ -802,10 +802,10 @@ Ja tenim auth=’public’, no obstant això si no està autenticat, la funció 
 
 >❕Atenció: molt de compte amb l'ús de “sudo()”. En general, és millor confiar en l'autenticació d'Odoo per a tot. Si no és possible, cal establir un sistema d'autenticació adequat. En cas de ser informació totalment pública cal limitar l'accés dels usuaris al mínim imprescindible.
 
-## 6.2  Passar paràmetres al Web Controller
+## 7.2  Passar paràmetres al Web Controller
 Els mètodes decorats amb “@http.route” accepten paràmetres enviats pel “body” mitjançant POST, paràmetres enviats mitjançant “?” de GET o en la mateixa URL com en el cas d'un servei REST. Vegem les tres opcions:
 
-### 6.2.1  Paràmetres enviats per POST o GET:
+### 7.2.1  Paràmetres enviats per POST o GET:
 En cas de ser type=’http’, espera un “body” de POST tradicional o un GET amb “?” i “&”, similar a:
 ```
 parametro=valor&otroparametro=otrovalor
@@ -824,7 +824,7 @@ def get_course(self, model, obj, **kw):
 
 Aquest exemple es pot cridar amb un POST en el qual enviem els paràmetres “model=course&obj=23” o amb un GET en el qual la URI, suposant estem fent proves en un servidor en“localhost” seria: [http://localhost:8069/school?model=course&obj=23](http://localhost:8069/school?model=course&obj=23)
 
-### 6.2.2  Paràmetres per REST:
+### 7.2.2  Paràmetres per REST:
 Modifiquem aquest exemple per a acceptar peticions a la manera dels serveis REST:
 ```python
 @http.route('/school/<model>/<obj>', auth='public',cors='*', type='http')
@@ -836,7 +836,7 @@ Modifiquem aquest exemple per a acceptar peticions a la manera dels serveis REST
 
 No hi ha més que fer una petició POST o GET sense enviar res però amb l'URL (suposant “localhost”): [http://localhost:8069/school/course/23](http://localhost:8069/school/course/23)
 
-### 6.2.3  Paràmetres per JSON:
+### 7.2.3  Paràmetres per JSON:
 Tan sols hem de canviar type=’http’ por type=’json’ i enviar un POST. Odoo necessita que el POST tinga com a capçalera "Content-Type: application/json" i el “body” tindrà aquesta sintaxi en el cas de l'exemple anterior:
 ```
 '{"jsonrpc":"2.0","method":"call","params":{"model":"course","obj":"23"}}'
@@ -871,7 +871,7 @@ return http.Response(
 
 Amb aquest exemple, a les dades no serializables, els intenta aplicar la funció “str”. Això és útil per exemple amb les dades en format “datetime”. No obstant això, hi haurà casos en els quals no serà suficient i haurem de realitzar-vos manualment.
 
-### 6.2.4  Cors amb Odoo
+### 7.2.4  Cors amb Odoo
 En cas de fer peticions des d'una altra URL, com en el cas de les API, cal configurar el cors= amb els dominis dels clients que accepta. Normalment, posarem cors=”*” com en alguns exemples anteriors, amb la finalitat d'acceptar connexions des de qualsevol domini.
 
 En fer peticions Cross-Origin, les cookies que envia el servidor en autenticar no es registren en el navegador, per la qual cosa és necessari implementar un protocol de sessió per “Token”.
@@ -899,7 +899,7 @@ Ací veiem un exemple amb el programa “PostMan”:
 
 ![alt text](./imatges/image.png)
 
-### 6.2.6  Fer una API REST
+### 7.2.6  Fer una API REST
 Odoo està més orientat a crear webs amb el seu framework o en el seu URL que per a fer d'API. Però si volem fer una aplicació mòbil o una aplicació web externa que consulte les seues dades, podem optar per crear una API REST. Hem de tenir en compte els següents factors:
 - Cal posar cors=”*” per a poder accedir.
 - Hem de desactivar csrf, ja que no ho podem usar.
@@ -953,7 +953,7 @@ def apiGet(self, **args):
 
 En aquest exemple mancat tot el relatiu a l'autenticació i algunes comprovacions per a evitar errors, però es pot veure com fem una cosa diferent en funció del mètode HTTP. Resulta més fàcil de gestionar el GET i el POST per separat pel “type”.
 
-### 6.2.7  Comunicar un SPA Vue/React/Angular con Odoo
+### 7.2.7  Comunicar un SPA Vue/React/Angular con Odoo
 Aquest apartat no té molt a veure amb el mòdul, no obstant això, és interessant com a enllaç amb el mòdul “Desenvolupament Web en Entorn Client” del CFGS DAW o com a introducció a un projecte final de cicle. Aquest seria el servei d'Angular que fa peticions a l'API REST de l'apartat anterior:
 ``` python
 @Injectable({
@@ -974,7 +974,7 @@ export class CourseService {
 
 De manera similar podria realitzar-se amb altres biblioteques de programació reactiva com Vue o React. En [https://www.odooinvue.org/](https://www.odooinvue.org/) hi ha un exemple de com connectar-se a Odoo amb Vue, utilitzant el framework per a desenvolupar codi multiplataforma [https://quasar.dev](https://quasar.dev).
 
-# 7. Dependències externes
+# 8. Dependències externes
 És possible que en desenvolupar mòduls, s'usen dependències externes ja siga en forma de biblioteques de Python i/o executables del sistema. Aquestes dependències han d'indicar-se en el fitxer “__manifest__.py” i solucionar-se a mà en el sistema on es posarà en marxa el servei.
 
 Per exemple, per a indicar les dependències d'una biblioteca per a generar codis de barres, anomenada https://pypi.org/project/python-barcode/.
@@ -994,10 +994,10 @@ pip3 instal python-barcode
 pip3 install python-barcode[images]
 ```    
 
-# 8. Mòduls d'exemple amb comentaris
+# 9. Mòduls d'exemple amb comentaris
 Es poden trobar exemples de mòduls d'Odoo comentats amb els conceptes tractats durant la unitat en [https://github.com/sergarb1/OdooModulosEjemplos](https://github.com/sergarb1/OdooModulosEjemplos)
 
-# 9. Bibliografía
+# 10. Bibliografía
 - [https://www.odoo.com/documentation/master/](https://www.odoo.com/documentation/master/)
 - [https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html](https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html)
 - [https://castilloinformatica.es/wiki/index.php?title=Odoo](https://castilloinformatica.es/wiki/index.php?title=Odoo)
