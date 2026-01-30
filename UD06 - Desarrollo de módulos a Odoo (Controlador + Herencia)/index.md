@@ -36,7 +36,7 @@ A continuació oferim en ordre alfabètic el llistat d’autors que han fet apor
 
 
 # **2.CONTROLADOR**
-Odoo té una arquitectura MVC (Model-Vista-Controlador) que ens permet desenvolupar cadascuna d'aquestes parts per separat. No obstant això, és habitual que el controlador es desenvolupe en els mateixos fitxers Python en els quals es fa el model.
+Odoo té una arquitecturas MVC (Model-Vista-Controlador) que ens permet desenvolupar cadascuna d'aquestes parts per separat. No obstant això, és habitual que el controlador es desenvolupe en els mateixos fitxers Python en els quals es fa el model.
 Per a aclarir, podríem dir que el controlador són els mètodes que hi ha en els models.
 En la unitat anterior hem vist els “fields” computats i com funcionen les funcions en Python i Odoo. En aquest apartat veurem les facilitats que proporciona el framework d'Odoo per a manipular l'ORM (Object Relational Mapping).
 
