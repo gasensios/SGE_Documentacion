@@ -383,6 +383,6 @@ Fitxer “views.xml”:
 - Sistemes de Gestió Empresarial IOC: 
   [https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html](https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html) 
 - Wikipedia: 
-  [https://es.wikipedia.org/wiki/Sistema_de_planificaci%C3%B3n_de_recursos_empresariales](https://es.wikipedia.org/wiki/Sistema_de_planificaci%C3%B3n_de_recursos_empresariales)(
+  [https://es.wikipedia.org/wiki/Sistema_de_planificaci%C3%B3n_de_recursos_empresariales](https://es.wikipedia.org/wiki/Sistema_de_planificaci%C3%B3n_de_recursos_empresariales)
 - Documentació de Odoo:
   [https://www.odoo.com/documentation/master/reference/http.html](https://www.odoo.com/documentation/master/reference/http.html)
