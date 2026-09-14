@@ -8,13 +8,13 @@ has_toc: true
 ---
 
 <div align="center">
-  <img src="logo.png" alt="Logo IES Benigasló" width="220"/>
-  
-  #  GUIA DOCENT
-  **IES Benigasló (La Vall d'Uixó)**  
-  *Família Professional d'Informàtica i Comunicacions*  
-  *Conselleria d'Educació, Universitats i Ocupació — Generalitat Valenciana*
+  <img src="logo.png" alt="Logo IES Benigasló" width="220"/>  
 </div>
+
+# GUIA DOCENT
+**IES Benigasló (La Vall d'Uixó)**  
+*Família Professional d'Informàtica i Comunicacions*  
+*Conselleria d'Educació, Universitats i Ocupació — Generalitat Valenciana*
 
 ---
 
