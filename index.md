@@ -12,3 +12,5 @@ has_toc: true
 ## **<u>Professor</u>**: Ginés Asensio Sanagustín
 
 ## **<u>E-mail</u>**: g.asensiosanagusti@edu.gva.es
+
+## [Guia i Presentació del mòdul](./Guia%20i%20presentació%20mòdul%20SGE.pdf)

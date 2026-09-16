@@ -153,10 +153,12 @@ En aquest apartat, introduirem un glossari amb alguns conceptes bàsics de l'emp
     - Stock/Inventari: és el conjunt d'existències d'articles que posseeix l'empresa tant per comerciar amb ells com per poder produir béns i serveis.
     - Distribució: procés pel qual l'empresa fa arribar béns i serveis des del lloc d'emmagatzematge fins al consumidor final.
           
+# **10. Enlaces de interés**
+* Diferencias entre un ERP y un CRM (Video): [https://www.youtube.com/watch?v=OeFeok-vBbk](https://www.youtube.com/watch?v=OeFeok-vBbk)
 
-# **10. Bibliografia**
+# **11. Bibliografia**
 * Sistemes de Gestió Empresarial IOC: 
-https://ioc.xtec.cat/educacio/cfgs-dam
+[https://ioc.xtec.cat/educacio/cfgs-dam](https://ioc.xtec.cat/educacio/cfgs-dam)
 
-* Wikipedia: https://es.wikipedia.org/wiki/Sistema_de_planificaci% C3% B3n_de_recursos_empresariales
+* Wikipedia: [https://es.wikipedia.org/wiki/Sistema_de_planificaci%C3%B3n_de_recursos_empresariales](https://es.wikipedia.org/wiki/Sistema_de_planificaci%C3%B3n_de_recursos_empresariales)
        

@@ -9,3 +9,7 @@ has_toc: true
 
 {: .text-center }
 # **<u>INTRODUCCIÓ A DOCKER</u>**
+
+* ***Documentación alternativa:***
+  * [Docker básico](./Docker_Basico.pdf)
+  * [Comandos Docker](./Docker%20CheatSheet.pdf)
