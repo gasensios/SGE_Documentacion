@@ -286,7 +286,11 @@ No obstant això, per copiar el fitxer de configuració, hauríem de seguir els 
 Un cop conegut, des de l’amfitrió podríem fer servir una ordre semblant a:
 > docker cp contenidor:/etc/odoo/odoo.conf /rutaanfitrion
 
-# **10.  Bibliografia**
+# **10.  Enlaces de interés**
+* Documentación Odoo 17: [https://www.odoo.com/documentation/17.0/es/](https://www.odoo.com/documentation/17.0/es/)
+* Documentación de usuario de Odoo: [https://www.odoo.com/documentation/user/14.0/es/](https://www.odoo.com/documentation/user/14.0/es/)
+
+# **11.  Bibliografia**
 - Sistemes de Gestió Empresarial IOC: 
 [https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html]
 - Documentació d’Odoo:

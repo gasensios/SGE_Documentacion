@@ -378,7 +378,10 @@ Fitxer “views.xml”:
 </odoo>
 ```
 
-# **9. BIBLIOGRAFIA**
+# **9. ENLACES DEE INTERÉS**
+* Documentación General - Odoo: [https://www.odoo.com/documentation/master/](https://www.odoo.com/documentation/master/)
+
+# **10. BIBLIOGRAFIA**
 
 - Sistemes de Gestió Empresarial IOC: 
   [https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html](https://ioc.xtec.cat/materials/FP/Materials/2252_DAM/DAM_2252_M10/web/html/index.html) 
