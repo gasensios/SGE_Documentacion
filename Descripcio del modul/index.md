@@ -18,22 +18,7 @@ has_toc: true
 
 ---
 
-## 1. Dades Generals del Cicle i del Mòdul
-
-| Concepte | Detall |
-| :--- | :--- |
-| **Cicle Formatiu** | Desenvolupament d'Aplicacions Multiplataforma (DAM) |
-| **Grau** | Grau Superior |
-| **Mòdul Professional** | Sistemes de Gestió Empresarial |
-| **Codi del Mòdul** | 0491 |
-| **Curs Acadèmic** | 2026 / 2027 |
-| **Curs** | 2n curs  |
-| **Càrrega Horària** | 133 hores totals (4 hora / setmana) |
-| **Aula** | Aula d'Informàtica 207 |
-
----
-
-##  2. Equip Docent i Canals de Comunicació
+##  1. Equip Docent i Canals de Comunicació
 
 * **Professor/a:** Ginés Asensio Sanagustín
 * **Correu electrònic corporatiu:** `g.asensiosanagusti@edu.gva.es` *(Únic canal oficial per a consultes privades i incidències)*
@@ -44,12 +29,12 @@ has_toc: true
 
 ---
 
-##  3. Contextualització i Objectius del Mòdul
+##  2. Contextualització i Objectius del Mòdul
 
-### 3.1. Introducció
+### 2.1. Introducció
 Aquest mòdul professional té com a finalitat dotar l'alumnat de les competències tècniques i metodològiques necessàries per al disseny, implementació, depuració i desplegament de solucions informàtiques professionals, complint els estàndards de qualitat de la indústria tecnològica actual.
 
-### 3.2. Objectius Generals
+### 2.2. Objectius Generals
 1. **Comprendre i aplicar** els fonaments de l'arquitectura del programari/sistemes.
 2. **Desenvolupar autonomia** en la resolució d'incidències tècniques i la cerca de documentació oficial.
 3. **Fomentar el treball cooperatiu** mitjançant eines de control de versions i metodologies àgils.
@@ -57,7 +42,7 @@ Aquest mòdul professional té com a finalitat dotar l'alumnat de les competènc
 
 ---
 
-## 4. Resultats d'Aprenentatge (RA) i Continguts
+## 3. Resultats d'Aprenentatge (RA) i Continguts
 
 El currículum s'estructura al voltant dels **Resultats d'Aprenentatge (RA)** oficials establits per la normativa de la Comunitat Valenciana:  
 
@@ -87,7 +72,7 @@ El currículum s'estructura al voltant dels **Resultats d'Aprenentatge (RA)** of
 
 ---
 
-##  5. Metodologia Didàctica
+##  4. Metodologia Didàctica
 
 L'aprenentatge en la família d'Informàtica és eminentment pràctic i vivencial (*Learning by Doing*):
 
@@ -98,16 +83,19 @@ L'aprenentatge en la família d'Informàtica és eminentment pràctic i vivencia
 
 ---
 
-##  6. Criteris d'Avaluació i Qualificació
+##  5. Criteris d'Avaluació i Qualificació
 
 L'avaluació és contínua, formativa i integradora. Cada Resultat d'Aprenentatge (RA) té associats els seus respectius Criteris d'Avaluació (CA), que han de ser superats de manera independent.
 > Atenció: Es poden revisar al [annex 2](#annex-2) del document la relació de resultats d'aprenentatge (RA) amb els seus respectius criteris d'Avaluació (CA)
 
-### 6.1. Ponderació General per RA
+### 5.1. Ponderació General per RA
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│                        DISTRIBUCIÓ DE LA NOTA                          │
+│                        DISTRIBUCIÓ DE LA NOTA     ració de RAs:** Cada Resultat d'Aprenentatge (RA) s'haurà d'assolir amb una nota mínima ponderada de **5,0**.
+* **Còpia i Plagi:** L'ús no autoritzat de codi d'altres companys o la utilització indiscriminada d'intel·ligència artificial generativa sense citar i sense saber explicar el codi comportarà una qualificació de **0** en l'activitat i la pèrdua de l'avaluació contínua de la unitat corresponent.
+
+### 6.4. Assistència, Justificació i Pèrdua d'Avalua                     │
 ├──────────────────────────┬─────────────────────────────────────────────┤
 │ Activitats i Pràctiques  │ 20% (Tasques d'Aules, tallers i codi)       │
 │ Proves Individuals       │ 80% (Exàmen o Projecte amb prova final)     │
@@ -115,20 +103,20 @@ L'avaluació és contínua, formativa i integradora. Cada Resultat d'Aprenentatg
 ```
 > **Atencio: Aquest percentatge podrie variar per decisió del professor per a algún RA especific, que es reflexarà en la programació didàctica del mòdul, a més a més, serà informat previament al començament del RA**
 
-### 6.2. Ponderació Total del mòdul 
+### 5.2. Ponderació Total del mòdul 
 La nota global del curs serà una mitjana ponderada de les qualificacions de cada RA. La nota de cada RA ha de ser > = 5 per poder fer mitja amb la resta de RAs. Es donarà un percentatge a cada RA per a obtindré la mitjana ponderada del mòdul:
 ```
 RA1 (20%) + RA2 (20%) + RA3 (25%) + RA4 (25%) + RA5 (10%) = 100%
 ```
 
-### 6.3. Condicions de Superació del Mòdul
+### 5.3. Condicions de Superació del Mòdul
 *  Hi ha **dues** convocatòries per curs escolar
 * **Nota mínima en proves individuals:** Per a fer mitjana amb la resta d'apartats, cal obtenir una qualificació mínima de **5,0 sobre 10** en les proves escrites/pràctiques d'aula.
 * **Lliurament de pràctiques:** És obligatori obtindre una qualificació mínima de **5,0 sobre 10** com haver lliurat almenys el **80% de les pràctiques obligatòries** proposades a *Aules* dins del termini establit.
 * **Superació de RAs:** Cada Resultat d'Aprenentatge (RA) s'haurà d'assolir amb una nota mínima ponderada de **5,0**.
 * **Còpia i Plagi:** L'ús no autoritzat de codi d'altres companys o la utilització indiscriminada d'intel·ligència artificial generativa sense citar i sense saber explicar el codi comportarà una qualificació de **0** en l'activitat i la pèrdua de l'avaluació contínua de la unitat corresponent.
 
-### 6.4. Assistència, Justificació i Pèrdua d'Avaluació Contínua
+### 5.4. Assistència, Justificació i Pèrdua d'Avaluació Contínua
 La assistència és obligatòria. El còmput d'hores d'absència es calcula sobre el total d'hores assignades al mòdul durant el curs acadèmic:
 * *Avís preventiu (5% d'inassistència):* Quan l'estudiant acumula un 5% d'hores d'absència en el mòdul, s'emetrà un avís oficial d'advertència (notificat a través d'ITACA / Web Famílies a l'alumnat / representants legals) alertant del risc imminent de pèrdua d'avaluació contínua.
 * *Pèrdua de l'avaluació contínua (15% d'inassistència):* Superar el 15% d'hores d'inassistència sense justificar degudament comporta automàticament la *pèrdua del dret a l'avaluació contínua* en aquest mòdul professional.
@@ -136,14 +124,14 @@ La assistència és obligatòria. El còmput d'hores d'absència es calcula sobr
 > ⏱️ Exemple pràctic de càlcul segons les hores del mòdul:  
 > * Mòdul de *220 hores: 10% = 22 hores (avís) | 15% = **33 hores* (pèrdua).
 
-### 6.5. Recuperacions
+### 5.5. Recuperacions
 * Al final curs o durant el periode de Formación en Empresa es realitzarà una sessió de recuperació dels RAs no assolits, es disoparà d'una **ÚNICA** convocatoria per aquells que **NO** hagen perdut l'avaluació continua.
 * A final de curs es disposarà d'una **Convocatòria Ordinària Final** per a recuperar TODOS los RAs que conformen el mòdul, sols disposaràn d'aquesta convocatòria els alumnes que **SI** hagen perdut l'avaluació continua.
 * En cas de continuar tenint RAs no assolits, per als dos casos anteriors es disposarà d'una **Convocatòria Extraordinària** per a recuperar-los.
 
 ---
 
-##  7. Eines i Recursos de Treball
+##  6. Eines i Recursos de Treball
 
 Totes les eines utilitzades a classe són preferentment de codi obert (*Open Source*) i multiplataforma:
 
@@ -156,7 +144,7 @@ Totes les eines utilitzades a classe són preferentment de codi obert (*Open Sou
 
 ---
 
-##  8. Normes de Convivència
+##  7. Normes de Convivència
 
 Per a garantir un entorn òptim de treball professional a l'aula d'informàtica:
 

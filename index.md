@@ -13,4 +13,7 @@ has_toc: true
 
 ## **<u>E-mail</u>**: g.asensiosanagusti@edu.gva.es
 
-## [Guia i Presentació del mòdul](./Guia%20i%20presentació%20mòdul%20SGE.pdf)
+## **<u>Presentación de los módulos:</u>**
+* ### [Guia i Presentació de SGE - 2 DAM](./Guia%20i%20presentació%20mòdul%20SGE.pdf)
+
+* ### [Guia i Presentació de SGEA - 2 DAW](./Guia%20i%20presentació%20mòdul%20SGEA.pdf)
